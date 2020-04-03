@@ -82,15 +82,15 @@ padding:30px;
     
 }
 .buttons-container div {
-    border:1px solid green;
+   
     width:250px;
-    min-height:250px; 
+    height:250px; 
     position: relative;
     top:32%;
     border:5px solid white;
     border-radius:50%;
     background: rgba(0, 0, 0, 0.73);
-    margin:30px;
+    margin-top:30px;
     
   
 }
