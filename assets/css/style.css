@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Pacifico&family=Spicy+Rice&display=swap');
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Spicy Rice', cursive;
+*/
+header, section {
+    height:100vh;
+    width:100%;
+}
+.slider{
+height:100vh;
+background: no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position:absolute;
+
+}
+#slider0 {
+height:100vh;
+background:url(../images/jamaica/women-on-swings.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
+
+
+
+}
+#slider1 {
+height:100vh;
+background:url(../images/jamaica/jamaica-sunset.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
+}
+#slider2 {
+height:100vh;
+background:url(../images/jamaica/jamaica-1303880_1920.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+.description {  
+    max-width: 70rem;
+    min-height: 30rem;
+    background: rgba(0, 0, 0, 0.73);
+    margin:0 auto;
+    padding-top:20px;
+    border-radius:20px;
+}
+
+.description h2 {
+    text-align:center;
+    color:#f7f7f7c5;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.description p {
+color:#f7f7f7;
+font-weight:2rem;
+text-align: justify;
+text-align:center;
+padding:30px;
+}
+.buttons-container {
+    position: fixed;
+    height:100vh;
+    top:0;
+    width:250px;
+    right:80px;
+    
+}
+.buttons-container div {
+    border:1px solid green;
+    width:250px;
+    min-height:250px; 
+    position: relative;
+    top:32%;
+    border:5px solid white;
+    border-radius:50%;
+    background: rgba(0, 0, 0, 0.73);
+    margin:30px;
+    
+  
+}
+.buttons-container div p {
+    margin:0;
+    text-align:center;
+    line-height:250px;
+    color:#f7f7f7;
+    font-size:25px;
+    font-family: 'Oswald', cursive;
+    font-weight:200;
+    text-transform: capitalize;
+ }
+
+
+  
+
