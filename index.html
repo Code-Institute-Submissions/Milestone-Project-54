@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="container-fluid">
+	<header class="container-fluid no-gutters">
         <div class="row">
         <div class="col-12">
            
@@ -59,8 +59,17 @@
 </div>
 	</header>
 
-	<section>
-		<p>select your destination</p>
+	<section class="container-fluid">
+        <div class="row">
+            <div class="your-destiantion col-12">
+            </div>
+            <div class="jamaica col-12">
+            </div>
+            <div class="canada col-12">
+            </div>
+            <div class="Norway col-12">
+            </div>
+        </div>
 	</section>
 
 	<section>
@@ -74,65 +83,7 @@
 	<footer>
 		<p>footer</p>
 	</footer>
-	<!--
-<script>
-var  a=[];
- var imageIndex=0;
- var i=0;
-showImages();
-
-function showImages() {
- 
-
-
-while (a.length < 3){
-   
-     a[i]=document.getElementById("slider"+i);
-     a[i].style.display="none";
-        console.log(a[i]);
-        i++;
-}
-if (imageIndex < a.length) {
-       imageIndex++;
-       console.log(imageIndex)
-       
-    } else {
-       imageIndex=0;
-      
-    
-    }
- $(a[imageIndex]).fadeIn(2000).fadeOut(2000);
-/*
-    if (imageIndex==0) {
-        a[2].style.display="none";
-        a[imageIndex].style.display="block";
-        imageIndex++;
-    } else if (imageIndex==1) {
-
-         a[imageIndex-1].style.display="none";
-         a[imageIndex].style.display="block";
-          imageIndex++;
-         
-    }else if (imageIndex==2) {
-          a[imageIndex-1].style.display="none";
-         a[imageIndex].style.display="block";
-          imageIndex="0";
-           
-    }else {
-
-        
-    }
-        
-  */
-   
-   setTimeout(showImages, 4000);
-  
-   
-
-
-}
-</script>
--->
+	
 
 </body>
 <script src="assets/js/script.js"></script>

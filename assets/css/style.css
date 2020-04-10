@@ -86,6 +86,7 @@ padding:30px;
     font-size:25px;
     font-family: 'Oswald', cursive;
     font-weight:200;
+    margin:0 auto;
     text-transform: capitalize;
  }
  .resize-buttons-type-1 {   
@@ -98,13 +99,18 @@ padding:30px;
 .wrapped-in-buttons {
   position:absolute;  
   bottom:20px;
-
-  }
-.resize-buttons-type-2 {
-    position:absolute;
-    bottom:20px;
+  width:315px;
 }
-
+.resize-buttons-type-2 {
+     height:90px;
+     width:90px;
+     position:relative;
+     margin:0 auto;
+     display:inline-flex;
+}
+.jamaica, .canada, .norway{
+    height:30vh;
+}
 
 
 
