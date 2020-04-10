@@ -26,10 +26,6 @@ background:url(../images/jamaica/women-on-swings.jpg) no-repeat center center;
 -o-background-size: cover;
 background-size: cover;
 
-
-
-
-
 }
 #slider1 {
 height:100vh;
@@ -48,9 +44,7 @@ background:url(../images/jamaica/jamaica-1303880_1920.jpg) no-repeat center cent
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-
 }
-
 .description {  
     max-width: 70rem;
     min-height: 30rem;
@@ -73,18 +67,8 @@ text-align: justify;
 text-align:center;
 padding:30px;
 }
-.buttons-container {
-/*
-    height:100vh;
-    position: fixed;
-    top:0;
-    width:250px;
-    right:80px;
-    */
-}
 
-.buttons {
-   
+.buttons {  
     width:250px;
     height:250px; 
     position: relative;
@@ -93,8 +77,6 @@ padding:30px;
     border-radius:50%;
     background: rgba(0, 0, 0, 0.73);
     margin-top:30px;
-    
-  
 }
 .buttons-container div p {
     margin:0;
@@ -106,22 +88,17 @@ padding:30px;
     font-weight:200;
     text-transform: capitalize;
  }
-
- .resize-buttons-type-1 {
-    
+ .resize-buttons-type-1 {   
      height:120px;
      width:120px;
      position:relative;
-    margin:0 auto;
+     margin:0 auto;
      display:inline-flex;
 }
 .wrapped-in-buttons {
   position:absolute;  
   bottom:20px;
-  border:1px solid red;
-  width:371px;
-  
- 
+
   }
 .resize-buttons-type-2 {
     position:absolute;
