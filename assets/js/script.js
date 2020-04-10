@@ -14,21 +14,25 @@ $(document).ready(function () {
         if (imageIndex < a.length) {
             imageIndex++;
         } else {
-           imageIndex = 0;           
+            
+           imageIndex = 0; 
+
         }
         $(a[imageIndex]).fadeIn(2000).fadeOut(2000);       
         mainTimer = setTimeout(showImages, 4000);
     }
     var timeout = null;
+    /*
     $(document).on('mousemove', function () {
         clearTimeout(timeout);
         $(a[imageIndex]).stop().fadeIn(1000);    
         timeout = setTimeout(function () {
             console.log('Mouse idle for 3 sec');
-            clearTimeout(mainTimer);       
+            clearTimeout(mainTimer);            
             showImages();
         }, 3000);
     });
+    /*
     /*
     $( window ).resize(function() {
         if ($( window ).width() < 1300) {
