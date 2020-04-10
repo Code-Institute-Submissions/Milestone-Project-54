@@ -74,14 +74,16 @@ text-align:center;
 padding:30px;
 }
 .buttons-container {
-    position: fixed;
+/*
     height:100vh;
+    position: fixed;
     top:0;
     width:250px;
     right:80px;
-    
+    */
 }
-.buttons-container div {
+
+.buttons {
    
     width:250px;
     height:250px; 
@@ -104,6 +106,28 @@ padding:30px;
     font-weight:200;
     text-transform: capitalize;
  }
+
+ .resize-buttons-type-1 {
+    
+     height:120px;
+     width:120px;
+     position:relative;
+    margin:0 auto;
+     display:inline-flex;
+}
+.wrapped-in-buttons {
+  position:absolute;  
+  bottom:20px;
+  border:1px solid red;
+  width:600px;
+ 
+  }
+.resize-buttons-type-2 {
+    position:absolute;
+    bottom:20px;
+}
+
+
 
 
   

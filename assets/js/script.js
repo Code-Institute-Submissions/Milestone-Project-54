@@ -54,6 +54,7 @@ $(document).on('mousemove', function() {
         showImages();
     }, 3000);
 });
+/*
 $( window ).resize(function() {
     if ($( window ).width() < 1300) {
         $( ".buttons-container div" ).css("width", "200" );
@@ -62,4 +63,29 @@ $( window ).resize(function() {
   
   console.log($( window ).width());
 });
+*/
+if (($(window).width()>300) && ($(window).width()<500)) {
+    $( ".buttons" ).addClass("resize-buttons-type-2");
+    
+}else if (($(window).width()>500) && ($(window).width()<1360)){
+
+     
+
+
+     // $( ".buttons-container div" ).css({"width":"70","height":"70","font-size":"10px"});
+
+    $( " .buttons-container div p" ).css({"font-size":"10px","line-height":"120px"});
+ //   $(".buttons-container").css({"width":"120"});
+  //  $(".resize-buttons").css("bottom","20px");
+    $(".buttons-container  > div").addClass("wrapped-in-buttons");
+        $( ".buttons" ).addClass("resize-buttons-type-1");
+
+}else {
+   
+     $(".buttons-container  > div").addClass("wrapped-in-buttons");
+   
+    /// $(".buttons ").css("width","100%");
+     console.log($( window ).width());
+}
+
 });
