@@ -108,9 +108,94 @@ padding:30px;
      margin:0 auto;
      display:inline-flex;
 }
+
+/*---------------------------------------- Selecr your destination --------*/
 .jamaica, .canada, .norway{
-    height:30vh;
+    min-height:30vh;   
 }
+
+.your-destination {
+    height:8vh;
+    background:#f7f7f7f7;
+    margin:0;
+    padding:0;
+
+}
+.your-destination  h2 {
+     text-align:center;
+     font-family: 'Oswald', sans-serif;
+     font-size:36px;
+     line-height:10vh;
+}
+.jamaica, .canada, .norway {
+   border:1px solid #333333;
+
+}
+.picture {
+    min-height:30vh; 
+    background:url("../images/jamaica/women-on-swings.jpg");
+    background-size:cover; 
+      margin-bottom:1vh; 
+}
+.picture-1 {
+    min-height:30vh;
+    background:url("../images/jamaica/jamaica-sunset.jpg");
+    background-size:cover;  
+    margin-bottom:1vh;
+  
+}
+.picture-2{
+    min-height:30vh;
+    background:url("../images/jamaica/jamaica-1303880_1920.jpg");
+    background-size:cover;  
+    background-position:bottom;
+    margin-bottom:1vh;
+}
+
+.picture-3{
+    min-height:30vh;
+    background:url("../images/canada/2048px-Moraine_Lake_(Unsplash).jpg");
+    background-size:cover; 
+      margin-bottom:1vh; 
+}
+.picture-4 {
+    min-height:30vh;
+    background:url("../images/canada/6062033422_102d687269_k.jpg");
+    background-size:cover;  
+    margin-bottom:1vh;
+  
+}
+.picture-5{
+    min-height:30vh;
+    background:url("../images/canada/woman-2896389_1920.jpg");
+    background-size:cover;  
+    background-position:bottom;
+    margin-bottom:1vh;
+}
+.picture-6 {
+    min-height:30vh;
+    background:url("../images/norway/4669043022_2e375d5bd2_k.jpg");
+    background-size:cover; 
+      margin-bottom:1vh; 
+}
+.picture-7 {
+    min-height:30vh;
+    background:url("../images/norway/5937648493_535ef9d1da_h.jpg");
+    background-size:cover;  
+    margin-bottom:1vh;
+  
+}
+.picture-8{
+    min-height:30vh;
+    background:url("../images/norway/The_Sognefjord.jpg");
+    background-size:cover;  
+    background-position:bottom;
+    margin-bottom:1vh;
+}
+
+
+
+
 
 
 
