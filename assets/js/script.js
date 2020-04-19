@@ -53,7 +53,7 @@ $(document).ready(function () {
        
         });
     } else if (($(window).width() > 500) && ($(window).width() < 1360)) {
-        $(" .buttons-container div p").css({ "font-size": "10px", "line-height": "120px" });
+        $(" .buttons a").css({ "font-size": "10px", "line-height": "120px" });
         $(".buttons-container  > div").addClass("wrapped-in-buttons");
         $(".buttons").addClass("resize-buttons-type-1");
         $(".wrapped-in-buttons").css("left", n);
