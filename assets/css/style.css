@@ -79,8 +79,7 @@ padding:30px;
     background: rgba(0, 0, 0, 0.73);
     margin-top:30px;
 }
-.buttons-container div p {
-    margin:0;
+.buttons-container div a {
     text-align:center;
     line-height:250px;
     color:#f7f7f7;

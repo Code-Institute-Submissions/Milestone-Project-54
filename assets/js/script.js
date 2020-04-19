@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
     */
     if (($(window).width() > 300) && ($(window).width() < 500)) {
-        $(" .buttons-container div p").css({ "font-size": "10px", "line-height": "80px" });
+        $(" .buttons a").css({ "font-size": "10px", "line-height": "80px" });
         $(".buttons-container  > div").addClass("wrapped-in-buttons").css("width","281px");
         $(".buttons").addClass("resize-buttons-type-2");
         $(".wrapped-in-buttons").css("left", function (){
