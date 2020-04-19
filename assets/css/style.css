@@ -4,6 +4,7 @@ font-family: 'Pacifico', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Spicy Rice', cursive;
 */
+
 header, section {
     height:100vh;
     width:100%;
@@ -109,7 +110,8 @@ padding:30px;
      display:inline-flex;
 }
 
-/*---------------------------------------- Selecr your destination --------*/
+/*---------------------------------------- Select your destination --------*/
+
 .jamaica, .canada, .norway{
     min-height:30vh;   
 }
@@ -125,12 +127,13 @@ padding:30px;
      text-align:center;
      font-family: 'Oswald', sans-serif;
      font-size:36px;
-     line-height:10vh;
+     line-height:8vh;
 }
 .jamaica, .canada, .norway {
    border:1px solid #333333;
 
 }
+
 .picture {
     min-height:30vh; 
     background:url("../images/jamaica/women-on-swings.jpg");
@@ -185,13 +188,27 @@ padding:30px;
     margin-bottom:1vh;
   
 }
-.picture-8{
+.picture-8 {
     min-height:30vh;
     background:url("../images/norway/The_Sognefjord.jpg");
     background-size:cover;  
     background-position:bottom;
     margin-bottom:1vh;
 }
+.name-of-place {
+    position:absolute;
+    height:100px;
+    width:100%;
+    background: rgba(0, 0, 0, 0.54);
+    z-index:1;
+    top:20px;   
+}
+.name-of-place h2 {
+    text-align:center;
+    color:#f7f7f7;
+    line-height:100px;
+}
+
 
 
 
