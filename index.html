@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<header class="container-fluid no-gutters"> 
+	<header hidden class="container-fluid no-gutters">
 		<div class="row">
 			<div class="col-12">
 
@@ -45,15 +45,21 @@
 			<div class="buttons-container">
 				<div>
 					<div class="buttons">
-						<a href="#place-to-go"><p>Plan your journy</p></a>
+						<a href="#place-to-go">
+							<p>Plan your journy</p>
+						</a>
 					</div>
 					<div class="buttons">
-                    	<a href="#"><p>Contact Us</p></a>
-					
+						<a href="#">
+							<p>Contact Us</p>
+						</a>
+
 					</div>
 					<div class="buttons">
-                    	<a href="#"><p>See More Pictures</p></a>
-						
+						<a href="#">
+							<p>See More Pictures</p>
+						</a>
+
 					</div>
 				</div>
 			</div>
@@ -61,14 +67,16 @@
 		</div>
 	</header>
 	<!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
-	<section class="container-fluid" id="place-to-go">
+	<section hidden class="container-fluid" id="place-to-go">
 		<div class="row">
 			<div class="your-destination  col-sm-12">
 				<h2>Choose your Journey</h2>
 			</div>
 			<div class="select-destination jamaica col">
 				<div class="row">
-                    <div class="name-of-place"><h2>Jamaica - Kingston</h2></div>
+					<div class="name-of-place">
+						<h2>Jamaica - Kingston</h2>
+					</div>
 					<div class="col-lg-4 picture">
 					</div>
 					<div class="col-lg-4 picture-1">
@@ -79,9 +87,11 @@
 			</div>
 			<div class="canada col-12 select-destination">
 				<div class="row">
-                   <div class="name-of-place"><h2>Canada - Moraine Lake</h2></div>
+					<div class="name-of-place">
+						<h2>Canada - Moraine Lake</h2>
+					</div>
 					<div class="col-lg-4 picture-3">
-					</div> 
+					</div>
 					<div class="col-lg-4 picture-4">
 					</div>
 					<div class="col-lg-4 picture-5">
@@ -90,7 +100,9 @@
 			</div>
 			<div class="norway col-12 select-destination">
 				<div class="row">
-                  <div class="name-of-place"><h2>Sognefjord</h2></div>
+					<div class="name-of-place">
+						<h2>Sognefjord</h2>
+					</div>
 					<div class="col-lg-4 picture-6">
 					</div>
 					<div class="col-lg-4 picture-7">
@@ -103,7 +115,7 @@
 	</section>
 
 	<section>
-		<p>map</p>
+		<div id="map"></div>
 	</section>
 
 	<section>
@@ -116,8 +128,76 @@
 
 
 </body>
-<script src="assets/js/script.js"></script>
+<script>
+	var map;
+      var service;
+      var infowindow;
 
+      function initMap() {
+        var sydney = new google.maps.LatLng(-33.867, 151.195);
+
+        infowindow = new google.maps.InfoWindow();
+
+        map = new google.maps.Map(
+            document.getElementById('map'), {center: sydney, zoom: 15});
+
+       var request = {
+    location: sydney,
+    radius: '500',
+    query: 'restaurant'
+   };
+
+        service = new google.maps.places.PlacesService(map);
+
+        service.textSearch(request, function(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+
+            map.setCenter(results[0].geometry.location);
+          }
+        });
+      }
+
+      function createMarker(place) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+            console.log(JSON.stringify(place));
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent("<h5>"+place.name+"</h5><br>"+
+                               `<img src="${place.photos[0].getUrl({maxWidth:200,maxHeight:200})}"/>`
+
+
+
+          );
+          infowindow.open(map, this);
+        });
+        var request = {
+  placeId: place.place_id,
+  fields: ['name', 'rating', 'formatted_phone_number', 'opening_hours']
+};
+
+service = new google.maps.places.PlacesService(map);
+service.getDetails(request, callback);
+
+function callback(place, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+      function openTimme(){
+          console.log("here"+JSON.stringify(place));
+      }
+  }
+}
+      }
+
+</script>
+<script src="assets/js/script.js"></script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
+	async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>

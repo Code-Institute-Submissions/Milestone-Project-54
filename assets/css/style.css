@@ -207,6 +207,11 @@ padding:30px;
     color:#f7f7f7;
     line-height:100px;
 }
+#map {
+   
+   height: 100vh;
+  
+}
 @media only screen and (max-width: 992px) {
   #place-to-go  {
     height:286vh;
