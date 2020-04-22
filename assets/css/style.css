@@ -209,8 +209,21 @@ padding:30px;
 }
 #map {
    
-   height: 100vh;
-  
+height:70vh;
+
+}
+.top-bar {
+    height:10vh;
+    z-index: 1;
+}
+.city-to-visit, .places-to-visit {
+border:1px solid green;
+}
+.city-to-visit,.places-to-visit h4 {
+    text-align:center;
+}
+.places-to-visit [type="checkbox"] {
+    color:red;
 }
 @media only screen and (max-width: 992px) {
   #place-to-go  {
