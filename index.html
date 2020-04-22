@@ -134,63 +134,79 @@
       var infowindow;
 
       function initMap() {
-        var sydney = new google.maps.LatLng(-33.867, 151.195);
+        var kingston = new google.maps.LatLng(18.020067, -76.796858);
 
         infowindow = new google.maps.InfoWindow();
 
         map = new google.maps.Map(
-            document.getElementById('map'), {center: sydney, zoom: 15});
+            document.getElementById('map'), {center: kingston, zoom: 15});
 
        var request = {
-    location: sydney,
-    radius: '500',
-    query: 'restaurant'
+         location: kingston,
+         radius: '500',
+         query: 'hotels'
    };
-
         service = new google.maps.places.PlacesService(map);
-
         service.textSearch(request, function(results, status) {
           if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
               createMarker(results[i]);
             }
-
             map.setCenter(results[0].geometry.location);
           }
         });
       }
-
       function createMarker(place) {
         var marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location
         });
-
-            console.log(JSON.stringify(place));
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent("<h5>"+place.name+"</h5><br>"+
-                               `<img src="${place.photos[0].getUrl({maxWidth:200,maxHeight:200})}"/>`
-
-
-
-          );
-          infowindow.open(map, this);
-        });
-        var request = {
+/*
+        function openTimes(a){
+   var request = {
   placeId: place.place_id,
   fields: ['name', 'rating', 'formatted_phone_number', 'opening_hours']
 };
 
-service = new google.maps.places.PlacesService(map);
-service.getDetails(request, callback);
+ service = new google.maps.places.PlacesService(map);
+ service.getDetails(request, callback);
 
 function callback(place, status) {
+        //console.log(place.opening_hours.open_now);
   if (status == google.maps.places.PlacesServiceStatus.OK) {
-      function openTimme(){
-          console.log("here"+JSON.stringify(place));
-      }
+     if(place.opening_hours.open_now==false) {
+         console.log (
+             "is working"            
+         );
+    //console.log("here"+JSON.stringify(place),place.opening_hours.weekday_text);
+          var b=place.opening_hours.weekday_text;
+         return b;
+     }else {
+         return "open";
+     }
+           // console.log(place.opening_hours.open_now);
+          //var c= place.opening_hours.weekday_text;
+          
   }
 }
+}
+*/
+          //  console.log(JSON.stringify(place));
+               function isItOpen() {
+             if (place.opening_hours.open_now==false){
+                    return '<h6 style="text-align:center;margin-top:3px;color:red;">Closed</h6';                      
+                }else {
+                    return'<h6 style="text-align:center;margin-top:3px">Open</h6';
+                }               
+            }
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(`<h5 style="text-align:center">${place.name}</h5><br>`+
+                               `<img style=" display: block;margin-left: auto;margin-right: auto;" src="${place.photos[0].getUrl({maxWidth:200,maxHeight:200})}"/>`+"<br>"+
+                              isItOpen()
+          );
+          infowindow.open(map, this);
+        });
+     
       }
 
 </script>
