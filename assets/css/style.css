@@ -207,23 +207,30 @@ padding:30px;
     color:#f7f7f7;
     line-height:100px;
 }
-#map {
-   
-height:70vh;
-
-}
+/*---------------------------------------- top bar of the map --------*/
 .top-bar {
-    height:10vh;
     z-index: 1;
+    background: rgba(0, 0, 0, 0.73);
+    color:#f7f7f7;
+   
 }
 .city-to-visit, .places-to-visit {
-border:1px solid green;
+border:1px solid #f7f7f7;
 }
 .city-to-visit,.places-to-visit h4 {
     text-align:center;
 }
-.places-to-visit [type="checkbox"] {
-    color:red;
+.places-to-visit input[type=checkbox] {
+ width:fit-content;
+ margin:0 auto;
+}
+.checkbox {
+width:fit-content;
+margin:0 auto;
+}
+#map {
+    height:100vh;
+
 }
 @media only screen and (max-width: 992px) {
   #place-to-go  {

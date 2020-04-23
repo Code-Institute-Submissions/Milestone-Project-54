@@ -113,36 +113,34 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- this section contains map and the top bar with options what city to visit and what places to visit-->
 	<section class=container-fluid>
-    <div class="row top-bar">
-        <div class="col-md-6 city-to-visit">
-          
-        
-        <h4>Choose where you would like to go</h4>
-        
-        <label for="kingston">Kingston</label>
-        <input type="radio" name="kingston" value="kingston" id="kingston">
-        <label for="Moraine-Lake">Moraine Lake</label>
-        <input type="radio" name="Moraine-Lake" value="Moraine-Lake" id="Moraine-Lake">
-        <label for="Sognefjord">Sognefjord</label>
-        <input type="radio" name="Sognefjord" value="Sognefjord" id="Sognefjord">
-        </div>
-        <div class="col-md-6 places-to-visit">
-        <h4>What place you would like to visit</h4>
-        <label for="restaurant">Restaurants</label>
-        <input type="checkbox" name="restaurant" value="restaurant" id="restaurant">
-         <label for="restaurant">Hotels</label>
-        <input type="checkbox" name="hotels" value="hotels" id="hotels">
-         <label for="beach">Restaurants</label>
-        <input type="checkbox" name="beach" value="beach" id="beach">
-        </div>
-         </div>
-       <div class="row">
-        <div class="col-12">
-		<div id="map"></div>
-        </div>
-        </div>
+		<div class="row top-bar">
+			<div class="col-md-6 city-to-visit">
+				<h4>Choose where you would like to go</h4>
+				<label for="kingston">Kingston</label>
+				<input type="radio" name="city" value="kingston" id="kingston"/>
+				<label for="Moraine-Lake">Moraine Lake</label>
+				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
+				<label for="Sognefjord">Sognefjord</label>
+				<input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>  
+            </div>
+				<div class="col-md-6 places-to-visit">
+					<h4>What place you would like to visit</h4>
+					<div class="checkbox">
+						<label for="restaurant">Restaurants</label>
+						<input type="checkbox" name="restaurant" value="restaurant" id="restaurant">
+						<label for="restaurant">Hotels</label>
+						<input type="checkbox" name="hotels" value="hotels" id="hotels">
+						<label for="beach">Restaurants</label>
+						<input type="checkbox" name="beach" value="beach" id="beach">
+                     </div>
+					</div>
+				</div>
+				<div class="row">
+					 <div class="col-12 " id="map">
+					</div>
+				</div>
 	</section>
 
 	<section>
@@ -156,6 +154,7 @@
 
 </body>
 <script>
+	/*
 	var map;
       var service;
       var infowindow;
@@ -217,7 +216,7 @@ function callback(place, status) {
   }
 }
 }
-*/
+
           //  console.log(JSON.stringify(place));
                function isItOpen() {
              if (place.opening_hours.open_now==false){
@@ -235,9 +234,10 @@ function callback(place, status) {
         });
      
       }
-
+*/
 </script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/mapscript.js"></script>
 <script
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
 	async defer></script>
