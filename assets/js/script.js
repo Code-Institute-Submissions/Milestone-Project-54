@@ -32,8 +32,9 @@ $(document).ready(function () {
             showImages();
         }, 3000);
     });
-    /*
-    /*
+   */
+   
+/*
     $( window ).resize(function() {
         if ($( window ).width() < 1300) {
             $( ".buttons-container div" ).css("width", "200" );
@@ -41,8 +42,9 @@ $(document).ready(function () {
         }
       
       console.log($( window ).width());
-    });
-    */
+      var k=$( window ).width();
+       });
+  */
     if (($(window).width() > 300) && ($(window).width() < 500)) {
         $(" .buttons a").css({ "font-size": "10px", "line-height": "80px" });
         $(".buttons-container  > div").addClass("wrapped-in-buttons").css("width","281px");
@@ -61,4 +63,5 @@ $(document).ready(function () {
        $(".buttons-container  > div").addClass("wrapped-in-buttons").css("right","20px");      
        
     }
+   
 });

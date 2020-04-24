@@ -227,9 +227,11 @@ border:1px solid #f7f7f7;
 width:fit-content;
 margin:0 auto;
 }
+.map-section {
+    background-color:#f7f7f7;
+}
 #map {
-    height:100vh;
-    
+    height:100vh;   
 }
 /*---------------------------------------- contact us--------*/
 .contact-us-section {
@@ -240,7 +242,7 @@ margin:0 auto;
 text-align:center;
 font-family: 'Oswald', sans-serif;
 font-size: 2rem;
-margin-top:20px;
+margin-top:80px;
 color:#333333;
 
 
@@ -252,7 +254,7 @@ margin:0 auto;
 /*---------------------------------------- Footer--------*/
 
 .social-links {
- display: flex;
+  display: flex;
   justify-content: center;
   padding:0;
   height:64px;
@@ -292,7 +294,8 @@ margin:0 auto;
 
 @media only screen and (max-width: 992px) {
   #place-to-go  {
-    height:286vh;
+  height:286vh;
+    
   }
 }
 @media only screen and (max-width: 320px) {
@@ -300,6 +303,13 @@ margin:0 auto;
     margin-top:5px;
     font-size:32px;
   }
+}
+@media only screen and (max-width: 768px) {
+ #map {
+     height:88vh;
+     margin-top:0;   
+ }
+}
  
 
 
