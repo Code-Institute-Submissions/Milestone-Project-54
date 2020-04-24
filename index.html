@@ -7,16 +7,14 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/fa14b2a9bf.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
-
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
-
 	<title>Document</title>
 </head>
 
 <body>
-	<header hidden class="container-fluid no-gutters">
+	<header class="container-fluid no-gutters">
 		<div class="row">
 			<div class="col-12">
 
@@ -67,7 +65,7 @@
 		</div>
 	</header>
 	<!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
-	<section hidden class="container-fluid" id="place-to-go">
+	<section class="container-fluid" id="place-to-go no-gutters">
 		<div class="row">
 			<div class="your-destination  col-sm-12">
 				<h2>Choose your Journey</h2>
@@ -119,11 +117,11 @@
 			<div class="col-md-6 city-to-visit">
 				<h4>Choose where you would like to go</h4>
 				<label for="kingston">Kingston</label>
-				<input type="radio" name="city" value="kingston" id="kingston"/>
+				<input type="radio" name="city" value="kingston" id="kingston" checked/>
 				<label for="Moraine-Lake">Moraine Lake</label>
 				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
 				<label for="Sognefjord">Sognefjord</label>
-				<input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>  
+				<input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>
             </div>
 				<div class="col-md-6 places-to-visit">
 					<h4>What place you would like to visit</h4>
@@ -131,24 +129,63 @@
 						<label for="restaurant">Restaurants</label>
 						<input type="radio" name="visit" value="restaurants" id="restaurant">
 						<label for="hotels">Hotels</label>
-						<input type="radio" name="visit" value="hotels" id="hotels">
+						<input type="radio" name="visit" value="hotels" id="hotels" checked>
 						<label for="beach">Beach</label>
 						<input type="radio" name="visit" value="beach" id="beach">
                      </div>
 					</div>
 				</div>
 				<div class="row">
-					 <div class="col-12 " id="map">
+					<div class="col-12 " id="map">
 					</div>
 				</div>
 	</section>
 
-	<section>
-		<p>contanct details</p>
+	<section class="container-fluid contact-us-section">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="contact-us">Contact Us</h2>
+				<form>
+                <div class="form-group">
+						<label for="name">Name</label>
+						<input type="name" class="form-control" id="name" aria-describedby="name" required>
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address</label>
+						<input type="email" class="form-control" id="emai" aria-describedby="emailHelp" required>
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>					
+						<div class="form-group">
+							<label for="Description">Description</label>
+                            <textarea class="form-control" id="textarea"  rows="3" cols="50" required>
+                            </textarea>							
+                    </div>
+							<button type="submit" class="btn btn-primary rounded-button">Submit</button>
+				</form>
+			</div>
+		</div>
+		</div>
 	</section>
-
-	<footer>
-		<p>footer</p>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<ul class="social-links">
+					<li><a
+							href="facebook.com"><i class="fab fa-facebook-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					</li>
+					<li><a
+							href="facebook.com"><i class="fab fa-twitter-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					</li>
+					<li><a
+							href="facebook.com"><i class="fab fa-instagram-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					</li>
+					<li><a
+							href="facebook.com"><i class="fab fa-pinterest-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
 
 

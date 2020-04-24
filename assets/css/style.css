@@ -97,9 +97,9 @@ padding:30px;
      display:inline-flex;
 }
 .wrapped-in-buttons {
-  position:absolute;  
-  bottom:20px;
-  width:369px;
+    position:absolute;  
+    bottom:20px;
+     width:369px;
 }
 .resize-buttons-type-2 {
      height:90px;
@@ -211,8 +211,7 @@ padding:30px;
 .top-bar {
     z-index: 1;
     background: rgba(0, 0, 0, 0.73);
-    color:#f7f7f7;
-   
+    color:#f7f7f7;  
 }
 .city-to-visit, .places-to-visit {
 border:1px solid #f7f7f7;
@@ -230,14 +229,78 @@ margin:0 auto;
 }
 #map {
     height:100vh;
+    
+}
+/*---------------------------------------- contact us--------*/
+.contact-us-section {
+    background-color:#f7f7f7;
 
 }
+.contact-us{
+text-align:center;
+font-family: 'Oswald', sans-serif;
+font-size: 2rem;
+margin-top:20px;
+color:#333333;
+
+
+}
+form {
+width:70%;
+margin:0 auto;
+}
+/*---------------------------------------- Footer--------*/
+
+.social-links {
+ display: flex;
+  justify-content: center;
+  padding:0;
+  height:64px;
+  background-color:#666666;
+  
+}
+.social-links li {
+   margin-top:8px;
+   display:inline-block;
+   width:48px;
+   height:48px;
+   line-height:46px;
+   background:#f7f7f7;
+   border-radius:24px;
+   text-align:center;
+}
+
+.social-links li i {
+      font-size:32px;
+      vertical-align:middle;
+      color:#d61b1b;
+}
+
+.rounded-button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #c0dfff;
+    box-sizing: border-box;
+    border: 3px solid #e0e0e0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-clip: text;
+
+  
+}
+
 @media only screen and (max-width: 992px) {
   #place-to-go  {
     height:286vh;
   }
 }
-
+@media only screen and (max-width: 320px) {
+  .contact-us {
+    margin-top:5px;
+    font-size:32px;
+  }
+ 
 
 
 
