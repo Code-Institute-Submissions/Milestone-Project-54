@@ -291,6 +291,22 @@ margin:0 auto;
 
   
 }
+/*---------------------------------------- Info Window--------*/
+.info-window {
+  /* background:rgb(236, 236, 236);
+  
+    border:1px solid #dadada;
+   
+   margin:0;
+   padding:0;
+    */
+
+}
+.info-window h6 span {
+    color: rgba(241, 176, 55, 0.849);
+}
+
+
 
 @media only screen and (max-width: 992px) {
   #place-to-go  {

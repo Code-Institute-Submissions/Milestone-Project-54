@@ -18,7 +18,7 @@ $(document).ready(function () {
            imageIndex = 0; 
 
         }
-        $(a[imageIndex]).fadeIn(2000).fadeOut(2000);       
+        $(a[imageIndex]).fadeIn(2000).fadeOut(2000);    
         mainTimer = setTimeout(showImages, 4000);
     }
     var timeout = null;
