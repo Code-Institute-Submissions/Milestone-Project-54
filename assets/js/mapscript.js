@@ -1,4 +1,4 @@
-/*
+
 var service;
 var infowindow;
 var city;
@@ -24,7 +24,30 @@ var resultsTexSearch = [];
 //  var moraineLakeCoo= new google.maps.LatLng(51.322047,-116.185993);
 //  var sognefjordCoo= new google.maps.LatLng(61.170106, 6.581191);
 
+
 function initMap() {
+    $("#jamaica").click(function(){
+        city= new google.maps.LatLng(18.020067, -76.796858);
+        visit="hotels";
+        search(city, visit);
+$("#kingston").prop("checked", true);
+$("#hotels").prop("checked", true);
+    });
+ $("#norway").click(function(){
+        city= new google.maps.LatLng(61.170106, 6.581191);
+        visit="hotels";
+        search(city, visit);
+$("#Moraine-Lake").prop("checked", true);
+$("#hotels").prop("checked", true);
+    });
+ $("#canada").click(function(){
+        city= new google.maps.LatLng(51.322047,-116.185993);
+        visit="hotels";
+        search(city, visit);
+$("#Sognefjord").prop("checked", true);
+$("#hotels").prop("checked", true);
+    });
+
 
     city = new google.maps.LatLng(18.020067, -76.796858);
     visit = "hotels";
@@ -61,7 +84,7 @@ function initMap() {
             visit = "beach";
         }
         clearMarkers();
-        search(city, visit)
+     
     });
 
     function search(city, visit) {
@@ -314,5 +337,3 @@ function createMarker(place) {
         infowindow.open(map, this)
     });
 }
-
-*/

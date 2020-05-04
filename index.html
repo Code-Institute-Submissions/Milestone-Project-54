@@ -69,7 +69,8 @@
 			</div>
 			<div class="select-destination jamaica col">
 				<div class="row">
-					<div class="col-12 shadow-sm bg-white rounded frame">
+                <a  style="width:100%;"href="#take-to-map">
+					<div class="col-12 shadow-sm bg-white rounded frame" id="jamaica">
 						<div class="row">
 							<div class="name-of-place">
 								<h2>Jamaica - Kingston</h2>
@@ -84,11 +85,13 @@
 							</div>
 						</div>
 					</div>
+                    </a>
 				</div>
 			</div>
 			<div class="canada col-12 select-destination">
 				<div class="row">
-					<div class="col shadow bg-white rounded frame">
+                   <a  style="width:100%;"href="#take-to-map">
+					<div class="col shadow bg-white rounded frame" id="canada">
 						<div class="row">
 							<div class="name-of-place">
 								<h2>Canada - Moraine Lake</h2>
@@ -103,11 +106,13 @@
 							</div>
 						</div>
 					</div>
+                    </a>
 				</div>
 			</div>
 			<div class="norway col-12 select-destination">
 				<div class="row">
-					<div class="col-12 bg-white frame">
+                   <a  style="width:100%;"href="#take-to-map">
+					<div class="col-12 bg-white frame" id="norway">
 						<div class="row">
 							<div class="name-of-place">
 								<h2>Norway - Sognefjord</h2>
@@ -122,17 +127,18 @@
 						</div>
 					</div>
 				</div>
+                   </a>
 			</div>
 		</div>
 		</div>
 	</section>
 	<!-- this section contains map and the top bar with options what city to visit and what places to visit-->
-	<section class="container-fluid map-section">
+	<section class="container-fluid map-section" id="take-to-map">
 		<div class="row top-bar">
 			<div class="col-md-6 city-to-visit">
 				<h4>Choose The City</h4>
 				<label for="kingston">Kingston</label>
-				<input type="radio" name="city" value="kingston" id="kingston"/>
+				<input type="radio" name="city" value="kingston" id="kingston" checked/>
 				<label for="Moraine-Lake">Moraine Lake</label>
 				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
 				<label for="Sognefjord">Sognefjord</label>
@@ -144,7 +150,7 @@
 						<label for="restaurant">Restaurants</label>
 						<input type="radio" name="visit" value="restaurants" id="restaurant">
 						<label for="hotels">Hotels</label>
-						<input type="radio" name="visit" value="hotels" id="hotels">
+						<input type="radio" name="visit" value="hotels" id="hotels" checked>
 						<label for="beach">Beach</label>
 						<input type="radio" name="visit" value="beach" id="beach">
                      </div>
@@ -158,7 +164,7 @@
 				</div>
 	</section>
 
-	<section class="container-fluid contact-us-section">
+	<section class="container-fluid contact-us-section" >
 		<div class="row">
 			<div class="col-12">
 				<h2 class="contact-us">Contact Us</h2>
