@@ -109,14 +109,28 @@ padding:30px;
      display:inline-flex;
 }
 
-/*---------------------------------------- Select your destination --------*/
-
-.jamaica, .canada, .norway{
-    min-height:30vh;   
+/*---------------------------------------- place-to-go --------*/
+.frame {
+    height:27.5vh;
+    top:1.25vh;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
+.frame:hover {
+ -webkit-box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important; 
+box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
+}
+     
+.jamaica, .canada, .norway{
+    min-height:31vh;
+    background:#f7f7f7;
+    
+}
+.jamaica:hover, .canada:hover, .norway:hover{
+   height:27.5vh;
 
+}
 .your-destination {
-    height:8vh;
+    height:7vh;
     background:#f7f7f7f7;
     margin:0;
     padding:0;
@@ -126,87 +140,147 @@ padding:30px;
      text-align:center;
      font-family: 'Oswald', sans-serif;
      font-size:36px;
-     line-height:8vh;
+     line-height:7vh;
 }
 .jamaica, .canada, .norway {
-   border:1px solid #333333;
-
+   /*border:1px solid #333333; */
+   
 }
 
 .picture {
-    min-height:30vh; 
+    min-height:26vh; 
     background:url("../images/jamaica/women-on-swings.jpg");
     background-size:cover; 
-      margin-bottom:1vh; 
+    margin-top:0.75vh;
+   
 }
 .picture-1 {
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/jamaica/jamaica-sunset.jpg");
     background-size:cover;  
-    margin-bottom:1vh;
+    margin-top:0.75vh;
   
 }
 .picture-2{
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/jamaica/jamaica-1303880_1920.jpg");
     background-size:cover;  
     background-position:bottom;
-    margin-bottom:1vh;
+    margin-top:0.75vh;
 }
 
 .picture-3{
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/canada/2048px-Moraine_Lake_(Unsplash).jpg");
     background-size:cover; 
-      margin-bottom:1vh; 
+     margin-top:0.75vh;
 }
+     
 .picture-4 {
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/canada/6062033422_102d687269_k.jpg");
     background-size:cover;  
-    margin-bottom:1vh;
+    margin-top:0.75vh;
   
 }
 .picture-5{
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/canada/woman-2896389_1920.jpg");
     background-size:cover;  
     background-position:bottom;
-    margin-bottom:1vh;
+    margin-top:0.75vh;
 }
 .picture-6 {
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/norway/4669043022_2e375d5bd2_k.jpg");
     background-size:cover; 
-      margin-bottom:1vh; 
+    margin-top:0.75vh;
 }
 .picture-7 {
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/norway/5937648493_535ef9d1da_h.jpg");
     background-size:cover;  
-    margin-bottom:1vh;
+    margin-top:0.75vh;
   
 }
 .picture-8 {
-    min-height:30vh;
+    min-height:26vh;
     background:url("../images/norway/The_Sognefjord.jpg");
     background-size:cover;  
     background-position:bottom;
-    margin-bottom:1vh;
+    margin-top:0.75vh;
 }
 .name-of-place {
     position:absolute;
-    height:100px;
+    height:26vh;
     width:100%;
     background: rgba(0, 0, 0, 0.54);
     z-index:1;
-    top:20px;   
+    top:0.75vh;
+
+   
 }
 .name-of-place h2 {
     text-align:center;
     color:#f7f7f7;
-    line-height:100px;
+    line-height:26vh;
 }
+#jamaica-diff1 {
+    width:1%;
+    height:26vh;
+    background:White; 
+    position:absolute;
+    z-index:1;
+    left:32.8%;
+    top:0.75vh;
+}
+#jamaica-diff2 {
+    width:1%;
+    height:26vh;
+    background:white;
+    position:absolute;
+    z-index:1;
+    right:32.8%;
+    top:0.75vh;
+}
+#canada-diff1{
+    width:1%;
+    height:26vh;
+    background:white;
+    position:absolute;
+    z-index:1;
+    right:32.8%;
+    top:0.75vh;
+}
+#canada-diff2{
+    width:1%;
+    height:26vh;
+    background:white;
+    position:absolute;
+    z-index:1;
+    left:32.8%;
+    top:0.75vh;
+}
+#norway-diff1{
+    width:1%;
+    height:26vh;
+    background:white;
+    position:absolute;
+    z-index:1;
+    right:32.8%;
+    top:0.75vh;
+}
+#norway-diff2{
+    width:1%;
+    height:26vh;
+    background:white;
+    position:absolute;
+    z-index:1;
+    left:32.8%;
+    top:0.75vh;
+}
+
+     
 /*---------------------------------------- top bar of the map --------*/
 .top-bar {
     z-index: 1;
@@ -287,9 +361,7 @@ margin:0 auto;
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    background-clip: text;
-
-  
+    background-clip: text; 
 }
 /*---------------------------------------- Info Window--------*/
 .info-window {
