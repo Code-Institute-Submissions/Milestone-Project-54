@@ -16,7 +16,7 @@ var closes;
 var n;
 var openHours;
 var weekDay;
-var Mapmarkers = [];
+var mapMarkers = [];
 var resultsPlace = [];
 var resultsTexSearch = [];
 
@@ -32,23 +32,23 @@ function initMap() {
         search(city, visit);
         $("#kingston").prop("checked", true);
         $("#hotels").prop("checked", true);
+        
     });
     $("#norway").click(function () {
         city = new google.maps.LatLng(61.170106, 6.581191);
-        visit = "hotels";
+      visit = "hotels";
         search(city, visit);
         $("#Moraine-Lake").prop("checked", true);
         $("#hotels").prop("checked", true);
     });
+
     $("#canada").click(function () {
         city = new google.maps.LatLng(51.322047, -116.185993);
-        visit = "hotels";
+       visit = "hotels";
         search(city, visit);
         $("#Sognefjord").prop("checked", true);
         $("#hotels").prop("checked", true);
     });
-
-
     city = new google.maps.LatLng(18.020067, -76.796858);
     visit = "hotels";
     infowindow = new google.maps.InfoWindow();
@@ -64,52 +64,47 @@ function initMap() {
         if (this.value == "kingston") {
             city = new google.maps.LatLng(18.020067, -76.796858);
             var zoom=15;
+         
+            search(city, visit);
         } else if (this.value == "Moraine-Lake") {
             city = new google.maps.LatLng(51.322047, -116.185993);
             var zoom=15;
+         
+           search(city, visit);
         } else if (this.value == "Sognefjord") {
             city = new google.maps.LatLng(61.170106, 6.581191);
             var zoom=10;
-        }
-        map = new google.maps.Map(
-            document.getElementById('map'), {
-            center: city,
-            zoom: zoom
-        });
-        search(city, visit);
-
+     
+         search(city, visit);
+        }   
     });
     $("input[type='radio']").change(function () {
-
         if (this.value == "hotels") {
             // $("input[value='restaurants']").prop( "disabled", true );
             //  $("input[value='beach']").prop( "disabled", true );
             visit = "hotels";
+           
+              search(city, visit);
         } else if (this.value == "restaurants") {
             visit = "restaurants";
+          
+             search(city, visit);
         } else if (this.value == "beach") {
             visit = "beach";
-        }
-        clearMarkers();
-
+         
+             search(city, visit);
+        }      
     });
-
     function search(city, visit) {
-
-
+        deleteMarkers();
         console.log($("input[type='radio']").val());
-
         var request = {
             location: city,
             radius: '500',
             query: visit,
-
         };
-
         service = new google.maps.places.PlacesService(map);
         service.textSearch(request, function (results, status) {
-
-
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 for (var i = 0; i < results.length; i++) {
                     createMarker(results[i]);
@@ -119,17 +114,11 @@ function initMap() {
                         placeId: results[i].place_id,
                         fields: ['name', 'rating', 'formatted_phone_number', 'opening_hours', 'utc_offset_minutes', 'url']
                     };
-
                     service = new google.maps.places.PlacesService(map);
                     service.getDetails(request1, function (open, status) {
                         if (status === google.maps.places.PlacesServiceStatus.OK) {
-
-
-
                             resultsPlace.push(open);
-
-                            console.log(open);
-
+                           console.log(open);
                         }
                     });
                 }
@@ -138,7 +127,6 @@ function initMap() {
         });
 
     }
-
 }
 
 function jamaicaTime() {
@@ -149,15 +137,19 @@ function jamaicaTime() {
 
 
 function setMapOnAll(map) {
-    for (var i = 0; i < Mapmarkers.length; i++) {
-        Mapmarkers.setMap(null);
+    for (var i = 0; i <  mapMarkers.length; i++) {
+        mapMarkers[i].setMap(map);
     }
+    console.log("this is for map"+map)
 }
+ function clearMarkers() {
+        setMapOnAll(null);
+      }
 
-function clearMarkers() {
-    setMapOnAll(null);
-}
-setMapOnAll(map);
+function deleteMarkers() {
+        clearMarkers();
+        mapMarkers = [];
+      }
 
 function createMarker(place) {
 
@@ -221,19 +213,19 @@ function createMarker(place) {
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        icon: sizeMarker,
+      //  icon: sizeMarker,
         title: "click",
         size: new google.maps.Size(70, 70),
         animation: google.maps.Animation.DROP,
 
         label: {
             text: `${isItOpen()}`,
-            color: 'yellow',
-            fontSize: '20px',
+            color: 'white',
+            fontSize: '8px',
             fontWeight: "bold",
         },
     });
-    Mapmarkers.push(marker);
+    mapMarkers.push(marker);
 
     function isItOpen() {
         try {
@@ -336,9 +328,11 @@ function createMarker(place) {
             '<p>' + rating() +
             findtime(place.name) +
             '</p><p><strong>Address:</strong>' + place.formatted_address + '</p></div>'
-
+            
         );
         // infowindow.open(map, this);
         infowindow.open(map, this)
+       
+      
     });
 }
