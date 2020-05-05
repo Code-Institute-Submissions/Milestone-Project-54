@@ -298,7 +298,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
 .city-to-visit, .places-to-visit {
 border:1px solid #f7f7f7;
 }
-.city-to-visit,.places-to-visit h4 {
+.city-to-visit,.places-to-visit h5 {
     text-align:center;
 }
 .places-to-visit input[type=checkbox] {
