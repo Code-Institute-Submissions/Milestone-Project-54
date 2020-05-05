@@ -110,8 +110,17 @@ padding:30px;
 }
 
 /*---------------------------------------- place-to-go --------*/
+.try {
+    background: rgba(0, 0, 0, 0.4);
+    width:100%;
+    position:absolute;
+    height:100%;
+    padding:0;
+    margin-left:-15px;
+
+}
 .frame {
-    height:27.5vh;
+    min-height:27.5vh;
     top:1.25vh;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
@@ -152,6 +161,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     background:url("../images/jamaica/women-on-swings.jpg");
     background-size:cover; 
     margin-top:0.75vh;
+  
    
 }
 .picture-1 {
@@ -159,7 +169,6 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     background:url("../images/jamaica/jamaica-sunset.jpg");
     background-size:cover;  
     margin-top:0.75vh;
-  
 }
 .picture-2{
     min-height:26vh;
@@ -212,9 +221,8 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
 }
 .name-of-place {
     position:absolute;
-    height:26vh;
+    height:10vh;
     width:100%;
-    background: rgba(0, 0, 0, 0.54);
     z-index:1;
     top:0.75vh;
 
@@ -325,6 +333,9 @@ form {
 width:70%;
 margin:0 auto;
 }
+.form-button {
+    background:#29a5e2;
+}
 /*---------------------------------------- Footer--------*/
 
 .social-links {
@@ -349,19 +360,71 @@ margin:0 auto;
 .social-links li i {
       font-size:32px;
       vertical-align:middle;
-      color:#d61b1b;
+      color:#29a5e2;
+
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.rounded-button {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #c0dfff;
-    box-sizing: border-box;
-    border: 3px solid #e0e0e0;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-clip: text; 
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
 }
 /*---------------------------------------- Info Window--------*/
 .info-window {
@@ -383,7 +446,24 @@ margin:0 auto;
 @media only screen and (max-width: 992px) {
   #place-to-go  {
   height:286vh;
-    
+  }
+  #jamaica-diff1 {
+      visibility: hidden;
+  }
+  #jamaica-diff2 {
+      visibility: hidden;
+  }
+  #canada-diff1 {
+      visibility: hidden;
+  }
+  #canada-diff2 {
+      visibility: hidden;
+  }
+  #norway-diff1 {
+      visibility: hidden;
+  }
+  #norway-diff2 {
+      visibility: hidden;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -399,12 +479,3 @@ margin:0 auto;
  }
 }
  
-
-
-
-
-
-
-
-  
-

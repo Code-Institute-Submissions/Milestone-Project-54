@@ -1,221 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/fa14b2a9bf.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fa14b2a9bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
-	<header hidden class="container-fluid no-gutters">
-		<div class="row">
-			<div class="col-12">
-				<div id="slider0">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-				<div id="slider1">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-				<div id="slider2">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="buttons-container">
-				<div>
-					<div class="buttons">
-						<a href="#place-to-go">
-							<p>Plan your journy</p>
-						</a>
-					</div>
-					<div class="buttons">
-						<a href="#">
-							<p>Contact Us</p>
-						</a>
-
-					</div>
-					<div class="buttons">
-						<a href="#">
-							<p>See More Pictures</p>
-						</a>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</header>
-	<!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
-	<section class="container-fluid" id="place-to-go">
-		<div class="row">
-			<div class="your-destination  col-sm-12">
-				<h2>Choose your Journey</h2>
-			</div>
-			<div class="select-destination jamaica col">
-				<div class="row">
-                <a  style="width:100%;"href="#take-to-map">
-					<div class="col-12 shadow-sm bg-white rounded frame" id="jamaica">
-						<div class="row">
-							<div class="name-of-place">
-								<h2>Jamaica - Kingston</h2>
-							</div>
-							<div id="jamaica-diff1"></div>
-							<div class="col-lg-4 picture">
-							</div>
-							<div id="jamaica-diff2"></div>
-							<div class="col-lg-4 picture-1">
-							</div>
-							<div class="col-lg-4 picture-2">
-							</div>
-						</div>
-					</div>
-                    </a>
-				</div>
-			</div>
-			<div class="canada col-12 select-destination">
-				<div class="row">
-                   <a  style="width:100%;"href="#take-to-map">
-					<div class="col shadow bg-white rounded frame" id="canada">
-						<div class="row">
-							<div class="name-of-place">
-								<h2>Canada - Moraine Lake</h2>
-							</div>
-							<div id="canada-diff1"></div>
-							<div class="col-lg-4 picture-3">
-							</div>
-							<div id="canada-diff2"></div>
-							<div class="col-lg-4 picture-4">
-							</div>
-							<div class="col-lg-4 picture-5">
-							</div>
-						</div>
-					</div>
-                    </a>
-				</div>
-			</div>
-			<div class="norway col-12 select-destination">
-				<div class="row">
-                   <a  style="width:100%;"href="#take-to-map">
-					<div class="col-12 bg-white frame" id="norway">
-						<div class="row">
-							<div class="name-of-place">
-								<h2>Norway - Sognefjord</h2>
-							</div>
-							<div id="norway-diff1"></div>
-							<div class="col-lg-4 picture-6">
-							</div>
-							<div id="norway-diff2"></div>
-							<div class="col-lg-4 picture-7">
-							</div>
-							<div class="col-lg-4 picture-8">
-						</div>
-					</div>
-				</div>
-                   </a>
-			</div>
-		</div>
-		</div>
-	</section>
-	<!-- this section contains map and the top bar with options what city to visit and what places to visit-->
-	<section class="container-fluid map-section" id="take-to-map">
-		<div class="row top-bar">
-			<div class="col-md-6 city-to-visit">
-				<h4>Choose The City</h4>
-				<label for="kingston">Kingston</label>
-				<input type="radio" name="city" value="kingston" id="kingston" checked/>
-				<label for="Moraine-Lake">Moraine Lake</label>
-				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
-				<label for="Sognefjord">Sognefjord</label>
-				<input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>
+    <header hidden class="container-fluid no-gutters">
+        <div class="row">
+            <div class="col-12">
+                <div id="slider0">
+                    <div class="description">
+                        <h2>Jamaica-Kingston</h2>
+                        <p>Here will be the desription</p>
+                    </div>
+                </div>
+                <div id="slider1">
+                    <div class="description">
+                        <h2>Jamaica-Kingston</h2>
+                        <p>Here will be the desription</p>
+                    </div>
+                </div>
+                <div id="slider2">
+                    <div class="description">
+                        <h2>Jamaica-Kingston</h2>
+                        <p>Here will be the desription</p>
+                    </div>
+                </div>
             </div>
-				<div class="col-md-6 places-to-visit">
-					<h4>Choose The Place</h4>
-					<div class="checkbox">
-						<label for="restaurant">Restaurants</label>
-						<input type="radio" name="visit" value="restaurants" id="restaurant">
-						<label for="hotels">Hotels</label>
-						<input type="radio" name="visit" value="hotels" id="hotels" checked>
-						<label for="beach">Beach</label>
-						<input type="radio" name="visit" value="beach" id="beach">
-                     </div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 maps">
-						<div id="map">
-						</div>
-					</div>
-				</div>
-	</section>
 
-	<section class="container-fluid contact-us-section" >
-		<div class="row">
-			<div class="col-12">
-				<h2 class="contact-us">Contact Us</h2>
-				<form>
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="name" class="form-control" id="name" aria-describedby="name" required>
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					</div>
-					<div class="form-group">
-						<label for="email">Email address</label>
-						<input type="email" class="form-control" id="emai" aria-describedby="emailHelp" required>
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					</div>
-					<div class="form-group">
-						<label for="Description">Description</label>
-						<textarea class="form-control" id="textarea"  rows="3" cols="50" required>
+            <div class="buttons-container">
+                <div>
+                    <div class="buttons">
+                        <a href="#place-to-go">
+                            <p>Plan your journy</p>
+                        </a>
+                    </div>
+                    <div class="buttons">
+                        <a href="#">
+                            <p>Contact Us</p>
+                        </a>
+
+                    </div>
+                    <div class="buttons">
+                        <a href="#">
+                            <p>See More Pictures</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
+    <section class="container-fluid" id="place-to-go">
+        <div class="row">
+            <div class="your-destination  col-sm-12">
+                <h2>Choose Your Journey</h2>
+            </div>
+            <div class="select-destination jamaica col">
+                <div class="row">
+                    <a style="width:100%;" href="#take-to-map">
+                        <div class="col-12 shadow-sm bg-white rounded frame" id="jamaica">
+                            <div class="row">
+                                <div class="name-of-place">
+                                    <h2>Jamaica - Kingston</h2>
+                                </div>                            
+                                <div id="jamaica-diff1"></div>
+                                <div class="col-lg-4 picture">
+                                  <div class="try"></div>
+                                </div>
+                                <div id="jamaica-diff2"></div>
+                                <div class="col-lg-4 picture-1">
+                                <div class="try"></div>
+                                </div>
+                                <div class="col-lg-4 picture-2">
+                                 <div class="try"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="canada col-12 select-destination">
+                <div class="row">
+                    <a style="width:100%;" href="#take-to-map">
+                        <div class="col-sm-12 shadow bg-white rounded frame" id="canada">
+                            <div class="row">
+                                <div class="name-of-place">
+                                    <h2>Canada - Moraine Lake</h2>
+                                </div>
+                                <div id="canada-diff1"></div>
+                                <div class="col-lg-4 picture-3">
+                                 <div class="try"></div>
+                                </div>
+                                <div id="canada-diff2"></div>
+                                <div class="col-lg-4 picture-4">
+                                 <div class="try"></div>
+                                </div>
+                                <div class="col-lg-4 picture-5">
+                                 <div class="try"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="norway col-12 select-destination">
+                <div class="row">
+                    <a style="width:100%;" href="#take-to-map">
+                        <div class="col-12 bg-white frame" id="norway">
+                            <div class="row">
+                                <div class="name-of-place">
+                                    <h2>Norway - Sognefjord</h2>
+                                </div>
+                                <div id="norway-diff1"></div>
+                                <div class="col-lg-4 picture-6">
+                                 <div class="try"></div>
+                                </div>
+                                <div id="norway-diff2"></div>
+                                <div class="col-lg-4 picture-7">
+                                 <div class="try"></div>
+                                </div>
+                                <div class="col-lg-4 picture-8">
+                                 <div class="try"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- this section contains map and the top bar with options what city to visit and what places to visit-->
+    <section class="container-fluid map-section" id="take-to-map">
+        <div class="row top-bar">
+            <div class="col-md-6 city-to-visit">
+                <h4>Choose The City</h4>
+                <label for="kingston">Kingston</label>
+                <input type="radio" name="city" value="kingston" id="kingston" checked/>
+                <label for="Moraine-Lake">Moraine Lake</label>
+                <input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
+                <label for="Sognefjord">Sognefjord</label>
+                <input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>
+            </div>
+                <div class="col-md-6 places-to-visit">
+                    <h4>Choose The Place</h4>
+                    <div class="checkbox">
+                        <label for="restaurant">Restaurants</label>
+                        <input type="radio" name="visit" value="restaurants" id="restaurant">
+                        <label for="hotels">Hotels</label>
+                        <input type="radio" name="visit" value="hotels" id="hotels" checked>
+                        <label for="beach">Beach</label>
+                        <input type="radio" name="visit" value="beach" id="beach">
+                     </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 maps">
+                        <div id="map">
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="container-fluid contact-us-section">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-us">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" aria-describedby="name" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="emai" aria-describedby="emailHelp" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <textarea class="form-control" id="textarea"  rows="3" cols="50" required>
                             </textarea>
-					</div>
-					<button type="submit" class="btn btn-primary rounded-button">Submit</button>
-				</form>
-			</div>
-		</div>
-		</div>
-	</section>
-	<footer class="container-fluid">
-		<div class="row">
-			<div class="col-12">
-				<ul class="social-links">
-					<li><a
-							href="facebook.com"><i class="fab fa-facebook-square"></i><span class="sr-only sr-only-focusable"></span></a>
-					</li>
-					<li><a
-							href="facebook.com"><i class="fab fa-twitter-square"></i><span class="sr-only sr-only-focusable"></span></a>
-					</li>
-					<li><a
-							href="facebook.com"><i class="fab fa-instagram-square"></i><span class="sr-only sr-only-focusable"></span></a>
-					</li>
-					<li><a
-							href="facebook.com"><i class="fab fa-pinterest-square"></i><span class="sr-only sr-only-focusable"></span></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-button">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="social-links">
+                    <li><a
+                            href="facebook.com"><i class="fab fa-facebook-square"></i><span class="sr-only sr-only-focusable"></span></a>
+                    </li>
+                    <li><a
+                            href="facebook.com"><i class="fab fa-twitter-square"></i><span class="sr-only sr-only-focusable"></span></a>
+                    </li>
+                    <li><a
+                            href="facebook.com"><i class="fab fa-instagram-square"></i><span class="sr-only sr-only-focusable"></span></a>
+                    </li>
+                    <li><a
+                            href="facebook.com"><i class="fab fa-pinterest-square"></i><span class="sr-only sr-only-focusable"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
 <script>
-	/*
-	var map;
+    /*
+    var map;
       var service;
       var infowindow;
 
@@ -299,13 +309,13 @@ function callback(place, status) {
 <script src="assets/js/script.js"></script>
 <script src="assets/js/mapscript.js"></script>
 <script
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
-	async defer></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
+    async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 </html>
