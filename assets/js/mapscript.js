@@ -26,26 +26,26 @@ var resultsTexSearch = [];
 
 
 function initMap() {
-    $("#jamaica").click(function(){
-        city= new google.maps.LatLng(18.020067, -76.796858);
-        visit="hotels";
+    $("#jamaica").click(function () {
+        city = new google.maps.LatLng(18.020067, -76.796858);
+        visit = "hotels";
         search(city, visit);
-$("#kingston").prop("checked", true);
-$("#hotels").prop("checked", true);
+        $("#kingston").prop("checked", true);
+        $("#hotels").prop("checked", true);
     });
- $("#norway").click(function(){
-        city= new google.maps.LatLng(61.170106, 6.581191);
-        visit="hotels";
+    $("#norway").click(function () {
+        city = new google.maps.LatLng(61.170106, 6.581191);
+        visit = "hotels";
         search(city, visit);
-$("#Moraine-Lake").prop("checked", true);
-$("#hotels").prop("checked", true);
+        $("#Moraine-Lake").prop("checked", true);
+        $("#hotels").prop("checked", true);
     });
- $("#canada").click(function(){
-        city= new google.maps.LatLng(51.322047,-116.185993);
-        visit="hotels";
+    $("#canada").click(function () {
+        city = new google.maps.LatLng(51.322047, -116.185993);
+        visit = "hotels";
         search(city, visit);
-$("#Sognefjord").prop("checked", true);
-$("#hotels").prop("checked", true);
+        $("#Sognefjord").prop("checked", true);
+        $("#hotels").prop("checked", true);
     });
 
 
@@ -54,25 +54,32 @@ $("#hotels").prop("checked", true);
     infowindow = new google.maps.InfoWindow();
     map = new google.maps.Map(
         document.getElementById('map'), {
-            center: city,
-            zoom: 15
-        });
+        center: city,
+        zoom: 15
+    });
     //  var kingston= $("input[name='kingston']" ).val();
     search(city, visit);
 
-    $("input[type='radio']").change(function() {
+    $("input[type='radio']").change(function () {
         if (this.value == "kingston") {
             city = new google.maps.LatLng(18.020067, -76.796858);
+            var zoom=15;
         } else if (this.value == "Moraine-Lake") {
             city = new google.maps.LatLng(51.322047, -116.185993);
-
+            var zoom=15;
         } else if (this.value == "Sognefjord") {
             city = new google.maps.LatLng(61.170106, 6.581191);
+            var zoom=10;
         }
+        map = new google.maps.Map(
+            document.getElementById('map'), {
+            center: city,
+            zoom: zoom
+        });
         search(city, visit);
 
     });
-    $("input[type='radio']").change(function() {
+    $("input[type='radio']").change(function () {
 
         if (this.value == "hotels") {
             // $("input[value='restaurants']").prop( "disabled", true );
@@ -84,7 +91,7 @@ $("#hotels").prop("checked", true);
             visit = "beach";
         }
         clearMarkers();
-     
+
     });
 
     function search(city, visit) {
@@ -100,7 +107,7 @@ $("#hotels").prop("checked", true);
         };
 
         service = new google.maps.places.PlacesService(map);
-        service.textSearch(request, function(results, status) {
+        service.textSearch(request, function (results, status) {
 
 
             if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -114,7 +121,7 @@ $("#hotels").prop("checked", true);
                     };
 
                     service = new google.maps.places.PlacesService(map);
-                    service.getDetails(request1, function(open, status) {
+                    service.getDetails(request1, function (open, status) {
                         if (status === google.maps.places.PlacesServiceStatus.OK) {
 
 
@@ -134,9 +141,9 @@ $("#hotels").prop("checked", true);
 
 }
 
-function jamaicaTime(){
-    date=new Date();
-    var weekDayStartsMonday=date.getDay()-1;
+function jamaicaTime() {
+    date = new Date();
+    var weekDayStartsMonday = date.getDay() - 1;
     return weekDayStartsMonday;
 }
 
@@ -176,7 +183,6 @@ function createMarker(place) {
                                 weekDay = 0;
                             }
                             openHours = date.getHours();
-
                             n = date.getTimezoneOffset();
                             date.getHours();
                             closesH = ((resultsPlace[a].opening_hours.periods[date.getDay()].close.hours) * 60 + resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - ((date.getHours()) * 60)) - date.getMinutes();
@@ -185,16 +191,15 @@ function createMarker(place) {
                             k = Math.floor(((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60 - b) * 60);
 
                             if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) > 24)) {
-
-                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[weekDay] + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[weekDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
                             } else {
-                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + ":" + k + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+date.getDay();
+                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
                             }
 
 
                         } catch (error) {
                             if (error.message == "Cannot read property 'close' of undefined") {
-                                return closes = "<p>" + resultsPlace[a].opening_hours.weekday_text[jamaicaTime()] + "<strong> Phone:</strong>" + resultsPlace[a].formatted_phone_number + "</p>";
+                                return closes = "<p><strong>" + resultsPlace[a].opening_hours.weekday_text[jamaicaTime()] + "</strong><br><strong> Phone:</strong>" + resultsPlace[a].formatted_phone_number + "</p>";
                             } else if (error.message == "Cannot read property 'periods' of undefined") {
                                 return closes = "open/close time is not specified";
                             } else if (error.message == "Uncaught TypeError: Cannot read property '0' of undefined") {
@@ -212,19 +217,19 @@ function createMarker(place) {
 
 
 
-    var sizeMarker = new google.maps.MarkerImage(place.icon, null, null, null, new google.maps.Size(80, 80));
+    var sizeMarker = new google.maps.MarkerImage(place.icon, null, null, null, new google.maps.Size(60, 60));
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        //icon: sizeMarker,
-        title: "sds",
+        icon: sizeMarker,
+        title: "click",
         size: new google.maps.Size(70, 70),
         animation: google.maps.Animation.DROP,
 
         label: {
             text: `${isItOpen()}`,
-            color: 'white',
-            fontSize: '8px',
+            color: 'yellow',
+            fontSize: '20px',
             fontWeight: "bold",
         },
     });
@@ -241,7 +246,7 @@ function createMarker(place) {
             }
         } catch (err) {
             if (err.message == "Cannot read property 'open_now' of undefined") {
-                return "?";
+                return ".";
             }
         }
     }
@@ -323,15 +328,15 @@ function createMarker(place) {
             </h6></div>`;
         }
     }
-    google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(
             '<div>' +
             `<img class="rounded" style=" display: block;margin-left: auto;margin-right: auto;" src="${place.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 })}"/>` +
             '<h6 style="text-align:center;margin-top:5px">' + place.name + '</h6>' +
             '<p>' + rating() +
             findtime(place.name) +
-            '</p><p><strong>Address:</strong>'+place.formatted_address+'</p></div>'
-           
+            '</p><p><strong>Address:</strong>' + place.formatted_address + '</p></div>'
+
         );
         // infowindow.open(map, this);
         infowindow.open(map, this)
