@@ -1,6 +1,6 @@
-function sendEmail(contactFornm) {
+function sendEmail(contactForm) {
      emailjs.send("r_preiks_gmail_com", "holiday", 
-     {"from_name":contactForm().name.value,
+     {"from_name":contactForm.name.value,
         "from_email":contactForm.email.value,
         "holiday_requist":contactForm.textarea.value
     })
