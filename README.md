@@ -24,8 +24,8 @@ Expected users of the website my potential employers or clients.
 
 - Colour scheme consists of few colours, was used website to blend the colors.
    (https://meyerweb.com/eric/tools/color-blend/#:::hex)
-    - ![#f7f7f7](https://placehold.it/15/fffff7/000000?text=+) `##f7f7f7`
-    - ![rgba(0, 0, 0, 0.4);](https://placehold.it/15/d01b33/000000?text=+) `#rgba(0, 0, 0, 0.4);`
+    - ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `#f7f7f7`
+    - ![rgba(0, 0, 0, 0.4);](https://placehold.it/15/rgba(0, 0, 0, 0.4)/000000?text=+) `#rgba(0, 0, 0, 0.4)`
     - ![#2b78e4](https://placehold.it/15/2b78e4/000000?text=+) `#2b78e4`
     - ![#333333](https://placehold.it/15/333333/000000?text=+) `#333333`
     - ![#d09233](https://placehold.it/15/d09233/000000?text=+) `#d09233`
