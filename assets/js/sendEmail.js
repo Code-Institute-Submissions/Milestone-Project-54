@@ -1,3 +1,4 @@
+
 function sendEmail(contactForm) {
      emailjs.send("r_preiks_gmail_com", "holiday", 
      {"from_name":contactForm.name.value,
@@ -9,5 +10,5 @@ function sendEmail(contactForm) {
     }, function(error) {
        console.log('FAILED...', error);
     });
-    return false;
+  return false;
 }
