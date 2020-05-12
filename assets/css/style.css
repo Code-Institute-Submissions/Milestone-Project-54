@@ -151,18 +151,12 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
      font-size:36px;
      line-height:7vh;
 }
-.jamaica, .canada, .norway {
-   /*border:1px solid #333333; */
-   
-}
 
 .picture {
     min-height:26vh; 
     background:url("../images/jamaica/women-on-swings.jpg");
     background-size:cover; 
-    margin-top:0.75vh;
-  
-   
+    margin-top:0.75vh;  
 }
 .picture-1 {
     min-height:26vh;
@@ -292,7 +286,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
 /*---------------------------------------- top bar of the map --------*/
 .top-bar {
     z-index: 1;
-    background: rgba(0, 0, 0, 0.73);
+    background: rgba(0, 0, 0, 0.85);
     color:#f7f7f7;  
 }
 .city-to-visit, .places-to-visit {
