@@ -19,7 +19,7 @@ var weekDay;
 var mapMarkers = [];
 var resultsPlace = [];
 var resultsTexSearch = [];
-
+var zoom;
 //var kingston = new google.maps.LatLng(18.020067, -76.796858);
 //  var moraineLakeCoo= new google.maps.LatLng(51.322047,-116.185993);
 //  var sognefjordCoo= new google.maps.LatLng(61.170106, 6.581191);
@@ -36,7 +36,7 @@ function initMap() {
     });
     $("#norway").click(function () {
         city = new google.maps.LatLng(61.170106, 6.581191);
-      visit = "hotels";
+        visit = "hotels";
         search(city, visit);
         $("#Moraine-Lake").prop("checked", true);
         $("#hotels").prop("checked", true);
@@ -55,7 +55,7 @@ function initMap() {
     map = new google.maps.Map(
         document.getElementById('map'), {
         center: city,
-        zoom: 15
+        zoom: 12
     });
     //  var kingston= $("input[name='kingston']" ).val();
     search(city, visit);
@@ -63,17 +63,17 @@ function initMap() {
     $("input[type='radio']").change(function () {
         if (this.value == "kingston") {
             city = new google.maps.LatLng(18.020067, -76.796858);
-            var zoom=15;
+             
          
             search(city, visit);
         } else if (this.value == "Moraine-Lake") {
             city = new google.maps.LatLng(51.322047, -116.185993);
-            var zoom=15;
+          
          
            search(city, visit);
         } else if (this.value == "Sognefjord") {
             city = new google.maps.LatLng(61.170106, 6.581191);
-            var zoom=10;
+       
      
          search(city, visit);
         }   
@@ -83,15 +83,16 @@ function initMap() {
             // $("input[value='restaurants']").prop( "disabled", true );
             //  $("input[value='beach']").prop( "disabled", true );
             visit = "hotels";
-           
+             
               search(city, visit);
         } else if (this.value == "restaurants") {
             visit = "restaurants";
+             
           
              search(city, visit);
         } else if (this.value == "beach") {
             visit = "beach";
-         
+          
              search(city, visit);
         }      
     });
