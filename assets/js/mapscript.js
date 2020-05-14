@@ -20,6 +20,7 @@ var mapMarkers = [];
 var resultsPlace = [];
 var resultsTexSearch = [];
 var zoom;
+
 //var kingston = new google.maps.LatLng(18.020067, -76.796858);
 //  var moraineLakeCoo= new google.maps.LatLng(51.322047,-116.185993);
 //  var sognefjordCoo= new google.maps.LatLng(61.170106, 6.581191);
@@ -168,25 +169,28 @@ function createMarker(place) {
                             //   return closes=resultsPlace[a]//.opening_hours.weekday_text;
                             console.log(resultsPlace[a]);
                             date = new Date();
-                            openHours = date.getDay();
+                            openDay = date.getDay();
                             var dd = date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60);
-                            if ((openHours == 0) && (dd > 24)) {
-                                weekDay = 6;
+
+
+                            if ((openDay == 0) && (dd > 24)) {
+                                openDay = 6;
                             } else {
-                                weekDay = 0;
+                                OpenDay = 0;
                             }
                             openHours = date.getHours();
                             n = date.getTimezoneOffset();
                             date.getHours();
+                            
                             closesH = ((resultsPlace[a].opening_hours.periods[date.getDay()].close.hours) * 60 + resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - ((date.getHours()) * 60)) - date.getMinutes();
                             closesM = resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - date.getMinutes();
                             b = Math.floor((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60);
                             k = Math.floor(((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60 - b) * 60);
 
-                            if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) > 24)) {
-                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[weekDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
+                            if (resultsPlace[a].opening_hours.isOpen() == false) {
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+openDay;
                             } else {
-                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
+                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+closesH;
                             }
 
 

@@ -16,5 +16,10 @@ Place these links in head area right below the titile
 
 	<!--Load Tests-->
 	<script type="text/javascript" src="spec/calcSpec.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-	</script>
+	
+
+      if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) > 23)) {
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[weekDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+;
+                            } else {
+                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
+                            }

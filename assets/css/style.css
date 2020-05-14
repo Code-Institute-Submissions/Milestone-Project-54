@@ -549,7 +549,7 @@ margin:0;
  }
  @media screen and (orientation:landscape) and (max-width:768px) { 
 #map {
-     height:28vh;
+     height:100vh;
      margin-top:0;   
  }
  .city-to-visit {
