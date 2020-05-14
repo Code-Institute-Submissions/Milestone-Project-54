@@ -25,13 +25,8 @@ Expected users of the website my potential employers or clients.
 - Colour scheme consists of few colours, was used website to blend the colors.
    (https://meyerweb.com/eric/tools/color-blend/#:::hex)
     - ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `#f7f7f7`
-    - ![rgba(0, 0, 0, 0.4);](https://placehold.it/15/rgba(0, 0, 0, 0.4)/000000?text=+) `#rgba(0, 0, 0, 0.4)`
-    - ![#2b78e4](https://placehold.it/15/2b78e4/000000?text=+) `#2b78e4`
-    - ![#333333](https://placehold.it/15/333333/000000?text=+) `#333333`
-    - ![#d09233](https://placehold.it/15/d09233/000000?text=+) `#d09233`
-    - ![#666666](https://placehold.it/15/666666/000000?text=+) `#666666`
-    - ![#f89808](https://placehold.it/15/f89808/000000?text=+) `#f89808`
-    - ![#dc3545](https://placehold.it/15/dc3545/000000?text=+) `#dc3545` Bottstrap card class bg-danger
+    - ![##29a5e2](https://placehold.it/15/29a5e2/000000?text=+) `#29a5e2`
+    - ![#666666](https://placehold.it/15/666666/000000?text=+) `#666666` Bottstrap card class bg-danger
     
     
 -  font used throughout the website
@@ -49,17 +44,15 @@ Features planned, implemented and outlined for later development
 ### Planned Features
 - Documentation - ReadMe File, Licence & Mockups
 - Colour Scheme
-- custom logo
+- slider
 - Favicon
 - Bootstrap - HTML, CSS Framework
     - Grid System - Columns and Rows
-    - Cards
-    - Navbar
-    - Pegination
 - Responsive design - Mobile First
 - UX elements
     - Animations
 - Accesibility
+- contact Form
 - Git - Version Control System
 - GitHub - Remote Repository
 - Deployed - Hosted on Github Pages
@@ -68,9 +61,7 @@ Features planned, implemented and outlined for later development
 - Documentation - ReadMe File, Licence & Mockups
 - Colour Scheme
 - Bootstrap - HTML, CSS Framework
-    - Grid System - Columns and Rows
-    - Cards
-    - Navbar
+    - Grid System - Columns and Rows  
 - Responsive design - Mobile First
 - UX elements
     - Animations
@@ -82,8 +73,8 @@ Features planned, implemented and outlined for later development
 
 ### Features Left to Implement
 - custom logo
- Bootstrap - HTML, CSS Framework
-    - Pagination
+
+  
 
 ## Technologies Used
 
@@ -92,12 +83,18 @@ This project makes use of:
     - HTML for strucutre
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - CSS for Styling
+- [JavaScript](https://simple.wikipedia.org/wiki/JavaScript)
+    - JS for creating dynamic functions, manipulating google places api.
+- [jQuery](https://en.wikipedia.org/wiki/JQuery)
+    - jQuery very usefull for traversing and events handeling
+- [Google Places API](https://developers.google.com/places/web-service/intro)
+    - Google Places API to request an iformation for particular places
 - [Google Chrome](https://www.google.com/chrome/)
     - Used for browser and dev tools
 - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new)
-    - Used for browser
+    - Used for browsing and testing responsiveness.
 - [Google](https://www.google.com/)
-    - **Google** was used for research.
+    - **Google** was used for research, workm and testing responsiveness
 - [Bootstrap](https://getbootstrap.com/)
     - HTML and CSS Framework from **Bootstrap**
 - [Gitpod](https://www.gitpod.io/)
@@ -108,7 +105,7 @@ This project makes use of:
     - Website hosted on **Github Pages**
 - [Am I Responsive](http://ami.responsivedesign.is)
     - Testing responsiveness of the website **Am I Responsive**
-- [Balsamiq](https://balsamiq.cloud/)
+- [Figma](https://www.figma.com/)
     - used to make a mockup
 
 ## Testing
@@ -118,7 +115,7 @@ This project makes use of:
 
 ## Deployment
 
-The project is hosted on [GitHub Pages](https://rimantascode.github.io/milestone-profile2/)
+The project is hosted on [GitHub Pages](https://rimantascode.github.io/Milestone-Project-2/)
 
 The process involved:
 - Host a git repository on GitHub. Explained [here](https://help.github.com/en/articles/create-a-repo).
@@ -129,11 +126,11 @@ The process involved:
  
 To deploy your own version of the website:
 - Have git installed
-- Visit the [repository](https://github.com/rimantascode/milestone-profile2)
+- Visit the [repository](https://github.com/rimantascode/Milestone-Project-2)
 - Click 'Clone or download' and copy the code for http
 - Open a terminal in your root directory
 - Type 'git clone ' followed by the code taken from github repository
-    - ```https://github.com/rimantascode/milestone-profile2.git```
+    - ```https://github.com/rimantascode/Milestone-Project-2.git```
 - When this completes you have your own version of the website
     - Feel free to make any changes to it
 - The website can be run by opening one of the HTML files within a web browser
