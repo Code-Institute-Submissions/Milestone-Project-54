@@ -11,27 +11,12 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<title>Document</title>
-    <!-- Load Jasmine Framework-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js" integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha256-qazAASTTgUrq9SOYkPSB3oEuqbhn+2j4kxGkVZ0GKjY=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.min.js" integrity="sha256-50SUpM8uWrEsGOfSXDxZ+KqiIeOxUlwhiQN316wmwOg=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css" integrity="sha256-YzqdEMEXu1sH1t2Y9tk3XhKhxy1xMWvcA1koZx43k+8=" crossorigin="anonymous" />
-    
-    <!--Load scripts-->
-<script type="text/javascript" src="scripts/calc.js"></script>
-
-    <!--Load Tests-->
-    <script type="text/javascript" src="spec/calcSpec.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+	<script type="text/javascript">
+		(function(){
       emailjs.init("user_fT8QASrIT5GkBWUYFB8VD");  
    })();
-</script>
+	</script>
 </head>
-
 <body>
 	<header hidden class="container-fluid no-gutters">
 		<div class="row">
@@ -191,7 +176,6 @@
 					</div>
 				</div>
 	</section>
-
 	<section class="container-fluid contact-us-section">
 		<div class="row">
 			<div class="col-12">
@@ -206,15 +190,22 @@
 						<label for="email">Email address</label>
 						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
 					</div>
-					<div class="form-group">
-						<label for="Description">Description</label>
-						<textarea class="form-control" name="textarea" id="textarea"  rows="3" cols="50" required>
+						<div class="form-group">
+							<label for="Description">Description</label>
+							<textarea class="form-control" name="textarea" id="textarea"  rows="3" cols="50" required>
                             </textarea>
-					</div>
-					<button type="submit" class="btn btn-primary form-button">Submit</button>
+						</div>
+						<button type="submit" class="btn btn-primary form-button">Submit</button>
 				</form>
 			</div>
-		</div>
+              <div class="about">	
+				<h2>Abaut Us</h2>
+             <div class="about-text">  
+				<p>we are a small company helping people to choose the place where to travel. On this website you will find the three places where to travel you will be able to choose the city and the place where to go, on google map, this website might be helpful if you will be in one of those places. You are more then welcome to contact us if you have any questions. We might get the best value for the hotel, or provide some additional information regarding the city or traveling experience.  </p>
+    </div>
+	
+            </div>
+          
 		</div>
 	</section>
 	<footer class="container-fluid">
@@ -237,7 +228,7 @@
 			</div>
 		</div>
 	</footer>
-    <script src="assets/js/sendEmail.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
 
 
 </body>

@@ -4,8 +4,7 @@ font-family: 'Pacifico', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Spicy Rice', cursive;
 */
-
-header, section ,.place-to-go{
+header,.place-to-go{
     height:100vh;
     width:100%;
 }
@@ -136,14 +135,12 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
 }
 .jamaica:hover, .canada:hover, .norway:hover{
    height:27.5vh;
-
 }
 .your-destination {
     height:7vh;
     background:#f7f7f7f7;
     margin:0;
     padding:0;
-
 }
 .your-destination  h2 {
      text-align:center;
@@ -151,7 +148,6 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
      font-size:36px;
      line-height:7vh;
 }
-
 .picture {
     min-height:26vh; 
     background:url("../images/jamaica/women-on-swings.jpg");
@@ -183,8 +179,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     min-height:26vh;
     background:url("../images/canada/6062033422_102d687269_k.jpg");
     background-size:cover;  
-    margin-top:0.75vh;
-  
+    margin-top:0.75vh; 
 }
 .picture-5{
     min-height:26vh;
@@ -218,9 +213,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     height:10vh;
     width:100%;
     z-index:1;
-    top:0.75vh;
-
-   
+    top:0.75vh; 
 }
 .name-of-place h2 {
     text-align:center;
@@ -288,6 +281,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     z-index: 1;
     background: rgba(0, 0, 0, 0.85);
     color:#f7f7f7;  
+   
 }
 .city-to-visit, .places-to-visit {
 border:1px solid #f7f7f7;
@@ -315,7 +309,6 @@ margin:0 auto;
 /*---------------------------------------- contact us--------*/
 .contact-us-section {
     background-color:#f7f7f7;
-
 }
 .contact-us{
 text-align:center;
@@ -323,8 +316,6 @@ font-family: 'Oswald', sans-serif;
 font-size: 2rem;
 margin-top:80px;
 color:#333333;
-
-
 }
 form {
 width:70%;
@@ -333,8 +324,33 @@ margin:0 auto;
 .form-button {
     background:#29a5e2;
 }
+/*---------------------------------------- about us--------*/
+.about > h2 {   
+    font-family: 'Oswald', sans-serif;
+    margin-top:20px;
+    text-align:center;
+    text-transform: capitalize;
+    padding-top:50px;
+    padding-bottom:25px;
+}
+.about p {
+    padding-top:20px;
+   font-family: 'Oswald', sans-serif;
+   font-size:1.25rem;
+   letter-spacing: 2px;
+   word-spacing: 2px;
+   color:#666666;
+   font-weight:500;
+  text-align:justify;
+}
 /*---------------------------------------- Footer--------*/
+footer {
+    padding:0 !important;
+}
+footer ul {
+margin:0;
 
+}
 .social-links {
   display: flex;
   justify-content: center;
@@ -459,16 +475,24 @@ margin:0 auto;
 }
 @media only screen and (max-width: 767px) {
  #map {
-     height:88vh;
+     height:82vh;
      margin-top:0;   
  }
  .city-to-visit {
-     height:6vh;
+     height:9vh;
  }
  .places-to-visit {
-     height:6vh;
+     height:9vh;
+ }
+ .about p {
+     padding-left:10px;
+     padding-right:10px;
+ }
+ form{
+     width:100%;
  }
 }
+
  @media only screen and (min-width: 768px) {
  #map {
      height:94vh;
@@ -480,4 +504,64 @@ margin:0 auto;
  .places-to-visit {
      height:6vh;
  }
+ .about .about-text {
+     margin:0 auto;
+     width:70%;
+ }
 }
+
+ @media only screen and (orientation:landscape) and (max-width:900px) { 
+#map {
+     height:64vh;
+     margin-top:0;   
+ }
+ .city-to-visit {
+     height:18vh;
+ }
+ .places-to-visit {
+     height:18vh;
+ }
+ .about .about-text {
+     margin:0 auto;
+     width:70%;
+ }
+ .your-destination {
+    height:10vh;
+    background:#f7f7f7f7;
+    margin:0;
+    padding:0;
+}
+
+ .your-destination h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    line-height: 10vh;
+ }
+ #place-to-go  {
+  height:920vh;
+  }
+ .picture,.picture-1,.picture-2,.picture-3,.picture-4,.picture-5,.picture-6,.picture-7,.picture-8 {
+     height:100vh;
+ }
+    
+
+ }
+ @media screen and (orientation:landscape) and (max-width:768px) { 
+#map {
+     height:28vh;
+     margin-top:0;   
+ }
+ .city-to-visit {
+     height:18vh;
+ }
+ .places-to-visit {
+     height:18vh;
+ }
+ .about .about-text {
+     margin:0 auto;
+     width:70%;
+ }
+    
+
+ }
