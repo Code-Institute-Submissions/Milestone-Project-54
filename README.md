@@ -155,15 +155,15 @@ It may take a moment for changes to appear on the hosted website.
 
 #### Thank you very much fro all the source for amzing quality of the pictures.
 
- - Thank you [https://fshoq.com](https://fshoq.com/free-photos/p/167/woman-on-swing-caribbean-beach-and-sea) for picure.
- - Thank you [www.pxfuel.com](https://www.pxfuel.com/en/free-photo-jlzhv) for picure.
- - Thank you[https://pixabay.com/](https://pixabay.com/photos/jamaica-palm-trees-beach-1303880/) for picture
- - Thank [https://pixabay.com/](https://pixabay.com/photos/woman-hike-lake-female-hiker-2896389/) for picture
+ - Thank you [https://fshoq.com](https://fshoq.com/free-photos/p/167/woman-on-swing-caribbean-beach-and-sea) for a picture
+ - Thank you [www.pxfuel.com](https://www.pxfuel.com/en/free-photo-jlzhv) for a picture
+ - Thank you[https://pixabay.com/](https://pixabay.com/photos/jamaica-palm-trees-beach-1303880/) for a picture
+ - Thank you [https://pixabay.com/](https://pixabay.com/photos/woman-hike-lake-female-hiker-2896389/) for a picture
  - Thank you [https://wikimedia.org/](https://upload.wikimedia.org/) even ehen the picture is no availble any more
  - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/bods/6062033422) for a picture.
  - Thank you [https://commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:The_Sognefjord.jpg) for a picture
- - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/paszczak000/4669043022)
- - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/redjunasun/5937648493)
+ - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/paszczak000/4669043022) for a picture
+ - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/redjunasun/5937648493) for a picture
 
 ### Acknowledgements
 Thank you inspiration, very usefull guidence and tips:
