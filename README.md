@@ -1,6 +1,6 @@
 # Holiday Planner
 
-This website is my first milestone project for Code Institute, I will be using this website for my own presentation. The website is very simple, my goal was to display easily understandable information, for my potential employers or customers. The website was built using the Bootstrap v4.4.1 framework. 
+This is the second milestone project. The Idea of this project was to create a website that would help to plan the holiday. Provide an idea where is the place, see what places the travelers can visit being over there, all of that can be seen on Google map. 
 Hosted on [GitHub Pages](https://rimantascode.github.io/Milestone-Project-2/)
 Repository on [GitHub](https://github.com/rimantascode/Milestone-Project-2)
 
@@ -16,24 +16,30 @@ The project is shared for use with the [GNU General Public License v3](https://g
 ## UX
 
 ![Responsive Views of Home Page](documentation/responsive.png)
+This website consists of 4 parts. In the 1st part of this website, visitors can see 3 places to visit with high-quality pictures - Jamaica Kingston, Canada Moraine Lake, Norway Sognefjord. By hovering over the section of the place is slightly separated and by clicking on the particular section (or place to visit) the visitor is taken to the map which is the section 2 where they can see that place on the map and by changing options with radio buttons the visitors can see where are the restaurants, hotels, and beaches, the markers give a and idea if the place is open and when the users click on the marker they can see some information picture, place name, rating, the other bits of information is provided according to what the google provides, some places might have a feature how much time left until the place close if closed it might provide when it is opened a link to see the place on google maps. Address and the phone number.3. The section contains a contact form, by filling in the visitor can contact the service provider with any questions. 4. The section is a footer containing links to social platforms.
+The design is responsive and can be easily navigated on any size of the screen.
+The mock-up looks a bit different than the mockup, it is because I decided not to have a slider but have just 3 sections with pictures, to keep the website simple and display the information clearly, to let the visitors search threw the website quickly.
 
 ### Users 
-Expected users of the website my potential employers or clients.
+
+The users group will be any user with an inten to travel to Jamaica Kingston, Canada Moraine Lake, Norway Sognefjord. 
 
 ### Design
 
 - Colour scheme consists of few colours, was used website to blend the colors.
    (https://meyerweb.com/eric/tools/color-blend/#:::hex)
     - ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `#f7f7f7`
-    - ![##29a5e2](https://placehold.it/15/29a5e2/000000?text=+) `#29a5e2`
-    - ![#666666](https://placehold.it/15/666666/000000?text=+) `#666666` Bottstrap card class bg-danger
+    - ![#29a5e2](https://placehold.it/15/29a5e2/000000?text=+) `#29a5e2`
+    - ![#666666](https://placehold.it/15/666666/000000?text=+) `#666666` 
+    - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` 
+    Bottstrap card class bg-danger
     
     
 -  font used throughout the website
     - font-family: 'Comfortaa', 'Prompt','Roboto', sans-serif;
 
 ### Mockups
-The website consists from 4 pages index.html, conttact.html,resume.html,portfolio.html. Download section is stright forward, to download the the cv. I did a mockups for 3 pages in the beginning, and then dicided to build 2 more pages. 
+The mock-up looks a bit different than the mockup, it is because I decided not to have a slider but have just 3 sections with pictures, to keep the website simple and display the information clearly, to let the visitors search threw the website quickly.
 - [Mockup](documentation/full-stack-web-developer-milestone.pdf)  
 
 
@@ -73,11 +79,7 @@ Features planned, implemented and outlined for later development
 
 ### Features Left to Implement
 - custom logo
-
-  
-
 ## Technologies Used
-
 This project makes use of:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
     - HTML for strucutre
@@ -111,7 +113,6 @@ This project makes use of:
 ## Testing
     Tested on Mozilla firefox, Opera, Google Chrome and Safari browsers looked good responsive design.
     sent few links to my friends and relatives, the feedbacks were good.
-
 
 ## Deployment
 
@@ -149,7 +150,18 @@ It may take a moment for changes to appear on the hosted website.
     - used and idea of the pie diagram.
 -  [readme](https://github.com/Pattern-Projects/oireachtas-ifd-project/tree/master)
     - used as I guidence for my own readme.md
-- Work History style coppied and modified from Code Institute lessons
+- Work History style coppied and modified from Code Institute lessons.
+### Media
+ - Thank you [https://fshoq.com](https://fshoq.com/free-photos/p/167/woman-on-swing-caribbean-beach-and-sea) for picure.
+ - Thank you [www.pxfuel.com](https://www.pxfuel.com/en/free-photo-jlzhv) for picure.
+ - Thank you[https://pixabay.com/](https://pixabay.com/photos/jamaica-palm-trees-beach-1303880/) for picture
+ - thank [https://pixabay.com/](https://pixabay.com/photos/woman-hike-lake-female-hiker-2896389/) for picture
+ - Thank you [https://wikimedia.org/](https://upload.wikimedia.org/) even ehen the picture is no availble any more
+ - Thank you [https://www.flickr.com/](https://www.flickr.com/photos/bods/6062033422) for a picture.
+ Thank you [https://commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:The_Sognefjord.jpg) for a picture
+ Thank you [https://www.flickr.com/](https://www.flickr.com/photos/paszczak000/4669043022)
+ Thank you [https://www.flickr.com/](https://www.flickr.com/photos/redjunasun/5937648493)
+
 ### Acknowledgements
 Thank you inspiration, very usefull guidence and tips:
 
