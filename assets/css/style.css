@@ -493,22 +493,23 @@ margin:0;
  }
 }
 
- @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
  #map {
-     height:90vh;
+     height:92vh;
      margin-top:0;   
  }
  .city-to-visit {
-     height:10vh;
+     height:8vh;
  }
  .places-to-visit {
-     height:10vh;
+     height:8vh;
  }
  .about .about-text {
      margin:0 auto;
      width:70%;
  }
 }
+
 
  @media only screen and (orientation:landscape) and (max-width:900px) { 
 #map {
