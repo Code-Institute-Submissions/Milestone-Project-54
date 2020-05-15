@@ -15,7 +15,7 @@ The project is shared for use with the [GNU General Public License v3](https://g
 
 ## UX
 
-![Responsive Views of Home Page](documentation/responsive.png)
+![Responsive Views of Home Page](documents/responsiveness.png)
 This website consists of 4 parts. In the 1st part of this website, visitors can see 3 places to visit with high-quality pictures - Jamaica Kingston, Canada Moraine Lake, Norway Sognefjord. By hovering over the section of the place is slightly separated and by clicking on the particular section (or place to visit) the visitor is taken to the map which is the section 2 where they can see that place on the map and by changing options with radio buttons the visitors can see where are the restaurants, hotels, and beaches, the markers give a and idea if the place is open and when the users click on the marker they can see some information picture, place name, rating, the other bits of information is provided according to what the google provides, some places might have a feature how much time left until the place close if closed it might provide when it is opened a link to see the place on google maps. Address and the phone number.3. The section contains a contact form, by filling in the visitor can contact the service provider with any questions. 4. The section is a footer containing links to social platforms.
 The design is responsive and can be easily navigated on any size of the screen.
 The mock-up looks a bit different than the mockup, it is because I decided not to have a slider but have just 3 sections with pictures, to keep the website simple and display the information clearly, to let the visitors search threw the website quickly.

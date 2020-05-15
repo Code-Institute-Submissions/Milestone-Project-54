@@ -223,9 +223,8 @@ function createMarker(place) {
     mapMarkers.push(marker);
 
     function isItOpen() {
-        try {
-            if (place.opening_hours.open_now == false) {
-
+        try {        
+            if (status == false) {
 
                 return "Closed"
             } else {
@@ -237,19 +236,17 @@ function createMarker(place) {
             }
         }
     }
-
-    function rating() {
-
-        var ratings = parseFloat(place.rating);
+    function rating(ratings) {
+        var ratings = parseFloat(ratings);
         console.log(ratings);
-        if (ratings < 1) {
+        if (ratings <= 1) {
             return `<div class="info-window"><h6> <small class='text-muted'>Rating</small> 
             <span>
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
             <i class="fas fa-star-half-alt"></i>
             <i class="fas fa-star-half-alt"></i>
-              </span>
+            </span>
             <small class='text-muted'>of ${place.user_ratings_total}</small>
             </h6></div>`;
         } else if ((ratings > 2.0) && (ratings < 2.5)) {
@@ -263,8 +260,6 @@ function createMarker(place) {
               </span>
             <small class='text-muted'>of ${place.user_ratings_total}</small>
             </h6></div>`;
-
-
         } else if ((ratings > 3.0) && (ratings <= 3.5)) {
             return `<div class="info-window"><h6> <small class='text-muted'>Rating</small> 
             <span>
@@ -276,8 +271,6 @@ function createMarker(place) {
               </span>
             <small class='text-muted'>of ${place.user_ratings_total}</small>
             </h6></div>`;
-
-
         } else if ((ratings > 3.5) && (ratings <= 4.0)) {
             return `<div class="info-window"><h6> <small class='text-muted'>Rating</small> 
             <span>
@@ -289,7 +282,6 @@ function createMarker(place) {
             </span>
             <small class='text-muted'>of ${place.user_ratings_total}</small>
             </h6></div>`;
-
         } else if ((ratings > 4.0) && (ratings <= 4.5)) {
             return `<div class="info-window"><h6> <small class='text-muted'>Rating</small> 
             <span>
@@ -301,7 +293,6 @@ function createMarker(place) {
              </span>
             <small class='text-muted'>of ${place.user_ratings_total}</small>
             </h6></div>`;
-
         } else if ((ratings > 4.5) && (ratings <= 5.0)) {
             return `<div class="info-window"><h6> <small class='text-muted'>Rating</small> 
             <span>
@@ -320,7 +311,7 @@ function createMarker(place) {
             '<div>' +
             `<img class="rounded" style=" display: block;margin-left: auto;margin-right: auto;" src="${place.photos[0].getUrl({ maxWidth: 200, maxHeight: 200 })}"/>` +
             '<h6 style="text-align:center;margin-top:5px">' + place.name + '</h6>' +
-            '<p>' + rating() +
+            '<p>' + rating(place.rating) +
             findtime(place.name) +
             '</p><p><strong>Address:</strong>' + place.formatted_address + '</p></div>'
             

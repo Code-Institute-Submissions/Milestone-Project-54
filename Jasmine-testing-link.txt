@@ -1,7 +1,7 @@
 
 Place these links in head area right below the titile
 
-<!-- Load Jasmine Framework-->
+ <!-- Load Jasmine Framework-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js"
 		integrity="sha256-PePX8Jc4TIxzzVz0Qe4NsH3OUU8+Y49DBWvYgggNqkY=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js"
@@ -13,7 +13,7 @@ Place these links in head area right below the titile
 
 	<!--Load scripts-->
 	<script type="text/javascript" src="scripts/calc.js"></script>
-
+  <script type="text/javascript"  src="assets/js/mapscript.js"></script>
 	<!--Load Tests-->
 	<script type="text/javascript" src="spec/calcSpec.js"></script>
 	
