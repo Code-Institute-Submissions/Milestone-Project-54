@@ -171,8 +171,6 @@ function createMarker(place) {
                             date = new Date();
                             openDay = date.getDay();
                             var dd = date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60);
-
-
                             if ((openDay == 0) && (dd > 24)) {
                                 openDay = 6;
                             } else {
@@ -180,20 +178,18 @@ function createMarker(place) {
                             }
                             openHours = date.getHours();
                             n = date.getTimezoneOffset();
-                            date.getHours();
-                            
+                            date.getHours();       
                             closesH = ((resultsPlace[a].opening_hours.periods[date.getDay()].close.hours) * 60 + resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - ((date.getHours()) * 60)) - date.getMinutes();
                             closesM = resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - date.getMinutes();
                             b = Math.floor((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60);
                             k = Math.floor(((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60 - b) * 60);
-
-                            if (resultsPlace[a].opening_hours.isOpen() == false) {
-                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+openDay;
-                            } else {
-                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+closesH;
+                            if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) > 24)) {
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+resultsPlace[a].opening_hours.periods[date.getDay()].close.hours;
+                            } else if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) < 24))  {
+                               return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay-1]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+resultsPlace[a].opening_hours.periods[date.getDay()].close.hours;
+                            }else {
+                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
                             }
-
-
                         } catch (error) {
                             if (error.message == "Cannot read property 'close' of undefined") {
                                 return closes = "<p><strong>" + resultsPlace[a].opening_hours.weekday_text[jamaicaTime()] + "</strong><br><strong> Phone:</strong>" + resultsPlace[a].formatted_phone_number + "</p>";
@@ -202,18 +198,12 @@ function createMarker(place) {
                             } else if (error.message == "Uncaught TypeError: Cannot read property '0' of undefined") {
                                 return closes = "Picture is on the way";
                             }
-
                         }
                     }
                 }
             }
         }
-
     }
-
-
-
-
     var sizeMarker = new google.maps.MarkerImage(place.icon, null, null, null, new google.maps.Size(60, 60));
     var marker = new google.maps.Marker({
         map: map,
