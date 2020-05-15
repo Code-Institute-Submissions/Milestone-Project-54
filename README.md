@@ -40,7 +40,7 @@ The users group will be any user with an inten to travel to Jamaica Kingston, Ca
 
 ### Mockups
 The mock-up looks a bit different than the mockup, it is because I decided not to have a slider but have just 3 sections with pictures, to keep the website simple and display the information clearly, to let the visitors search threw the website quickly.
-- [Mockup](documents/mockup.pdf)  
+- [Mockup](documents/mockup.jpg)  
 
 
 ## Features
