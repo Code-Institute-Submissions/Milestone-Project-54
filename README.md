@@ -36,11 +36,11 @@ The users group will be any user with an inten to travel to Jamaica Kingston, Ca
     
     
 -  font used throughout the website
-    - font-family: 'Comfortaa', 'Prompt','Roboto', sans-serif;
+    - font-family: 'Oswald', sans-serif;
 
 ### Mockups
 The mock-up looks a bit different than the mockup, it is because I decided not to have a slider but have just 3 sections with pictures, to keep the website simple and display the information clearly, to let the visitors search threw the website quickly.
-- [Mockup](documentation/full-stack-web-developer-milestone.pdf)  
+- [Mockup](documents/mockup.pdf)  
 
 
 ## Features
@@ -143,17 +143,9 @@ The benefits of hosting your website on GitHub pages is that any pushed changes 
 
 It may take a moment for changes to appear on the hosted website.
 
-## Credits
- - [w3schools](https://www.w3schools.com/css/css3_shadows.asp)
-    - Box shadow was coppied and modified.
-- [code Institute](https://code-institute-solutions.github.io/StudentExampleProjectGradeFive/)
-    - used and idea of the pie diagram.
--  [readme](https://github.com/Pattern-Projects/oireachtas-ifd-project/tree/master)
-    - used as I guidence for my own readme.md
-- Work History style coppied and modified from Code Institute lessons.
 ### Media
 
-#### Thank you very much fro all the source for amzing quality of the pictures.
+#### Thank you very much for all the source for amzing quality of the pictures.
 
  - Thank you [https://fshoq.com](https://fshoq.com/free-photos/p/167/woman-on-swing-caribbean-beach-and-sea) for a picture
  - Thank you [www.pxfuel.com](https://www.pxfuel.com/en/free-photo-jlzhv) for a picture
