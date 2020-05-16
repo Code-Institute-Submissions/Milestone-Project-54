@@ -38,7 +38,7 @@ The users group will be any user with an inten to travel to Jamaica Kingston, Ca
     - ![#29a5e2](https://placehold.it/15/29a5e2/000000?text=+) `#29a5e2`
     - ![#666666](https://placehold.it/15/666666/000000?text=+) `#666666` 
     - ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` 
-    Bottstrap card class bg-danger
+   
     
     
 -  font used throughout the website
@@ -65,7 +65,7 @@ Features planned, implemented and outlined for later development
 - Google Places API
 - UX elements
 - Accesibility
-- contact Form
+- Contact Form
 - Git - Version Control System
 - GitHub - Remote Repository
 - Deployed - Hosted on Github Pages
@@ -91,17 +91,17 @@ Features planned, implemented and outlined for later development
 ## Technologies Used
 This project makes use of:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-    - HTML for strucutre
+    - **HTML** for strucutre
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-    - CSS for Styling
+    - **CSS** for Styling
 - [JavaScript](https://simple.wikipedia.org/wiki/JavaScript)
-    - JS for creating dynamic functions, manipulating google places api.
+    - **JS** for creating dynamic functions, manipulating google places api.
 - [jQuery](https://en.wikipedia.org/wiki/JQuery)
-    - jQuery very usefull for traversing and events handeling
+    - **jQuery** very usefull for traversing and events handeling
 - [Google Places API](https://developers.google.com/places/web-service/intro)
-    - Google Places API to request an iformation for particular places
+    - **Google Places API** to request an iformation for particular places
 - [Google Chrome](https://www.google.com/chrome/)
-    - Used for browser and dev tools
+    - Used for browsing and dev tools
 - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new)
     - Used for browsing and testing responsiveness.
 - [Google](https://www.google.com/)
@@ -130,7 +130,7 @@ This project makes use of:
 
 - The second part is a map.
 
-1If the selection was not selected in choose your journey the map will load automatically Kingston with hotels. click on radio buttons and the map will be displaying selected city, also if you will click on Choose The Place "Restaurants", "Hotels", "Beaches" the markers will be displayed accordingly. If you will click on the marker the info window will appear with the information about the place, some places will display how much time left until it closes, if it is closed, the day when it will be open again will be displayed. Some of the places have not provided the relevant information so will be displayed some  of information such as picture, place name, rating, phone number address, or "open/close time is not specified might appear on the window".
+1 If the selection was not selected in choose your journey the map will load automatically Kingston with hotels. click on radio buttons and the map will be displaying selected city, also if you will click on Choose The Place "Restaurants", "Hotels", "Beaches" the markers will be displayed accordingly. If you will click on the marker the info window will appear with the information about the place, some places will display how much time left until it closes, if it is closed, the day when it will be open again will be displayed. Some of the places have not provided the relevant information so will be displayed some  of information such as picture, place name, rating, phone number address, or "open/close time is not specified might appear on the window".
 The information accuracy was tested by sending website links to my friend living in different countries no matter what country the information was displayed correctly, we could see the same closing in time or is closed or open. 
 
 
@@ -185,9 +185,11 @@ The benefits of hosting your website on GitHub pages is that any pushed changes 
 
 It may take a moment for changes to appear on the hosted website.
 
+##Credits
+
 ### Media
 
-#### Thank you very much for all the source for amzing quality of the pictures.
+#### Thank you very much for all the source of high-quality quality pictures.
 
  - Thank you [https://fshoq.com](https://fshoq.com/free-photos/p/167/woman-on-swing-caribbean-beach-and-sea) for a picture
  - Thank you [www.pxfuel.com](https://www.pxfuel.com/en/free-photo-jlzhv) for a picture
