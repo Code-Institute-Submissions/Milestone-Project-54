@@ -183,11 +183,11 @@ function createMarker(place) {
                                 if(closesM<10){
                                     closesM="0"+closesM;
                                 }                            
-								return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + closesH + "H : " + closesM + " min" + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>';
+								return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + closesH + "H : " + closesM + " min" + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + 'target="_blank">open on google maps</a></p></div>';
 							}
 						} catch(error) {
 							if(error.message == "Cannot read property 'close' of undefined") {
-								return closes = "<p><strong>" + resultsPlace[a].opening_hours.weekday_text[jamaicaTime()] + "</strong><br><strong> Phone:</strong>" + resultsPlace[a].formatted_phone_number + "</p>";
+								return closes = "<p><strong>" + resultsPlace[a].opening_hours.weekday_text[jamaicaTime()] + "</strong><br><strong> Phone:</strong>" + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + ' target="_blank">open on google maps</a></br></p>';
 							} else if(error.message == "Cannot read property 'periods' of undefined") {
 								return closes = "open/close time is not specified";
 							} else if(error.message == "Uncaught TypeError: Cannot read property '0' of undefined") {
