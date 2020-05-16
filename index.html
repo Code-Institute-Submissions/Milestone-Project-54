@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan Your Journey</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/fa14b2a9bf.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<title>Document</title>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
 	</script>
 	<script type="text/javascript">
 		(function(){
@@ -140,7 +140,7 @@
 				<form onsubmit="return sendEmail(this);" method="post">
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="name" class="form-control" id="name" aria-describedby="name" required>
+						<input type="text" class="form-control" id="name" aria-describedby="name">
 						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
 					<div class="form-group">
@@ -148,7 +148,7 @@
 						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
 					</div>
 						<div class="form-group">
-							<label for="Description">Description</label>
+							<label for="textarea">Description</label>
 							<textarea class="form-control" name="textarea" id="textarea"  rows="3" cols="50" required>
                             </textarea>
 						</div>
@@ -189,8 +189,7 @@
 		</div>
 	</footer>
 	<script src="assets/js/sendEmail.js"></script>
-</body>
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 <script src="assets/js/mapscript.js"></script>
 <script
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
@@ -201,5 +200,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
-
+</body>
 </html>
