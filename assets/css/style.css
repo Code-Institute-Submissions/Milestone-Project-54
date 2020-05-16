@@ -372,6 +372,7 @@ footer ul {
 .info-window h6 span {
     color: rgba(241, 176, 55, 0.849);
 }
+/*---------------------------------------- the white seperator in the picures --------*/
 @media only screen and (max-width: 992px) {
   #place-to-go  {
     height:250vh;
@@ -401,6 +402,7 @@ footer ul {
       visibility: hidden;
   }
 }
+/*---------------------------------------- for smaller screens--------*/
 @media only screen and (max-width: 320px) {
   .contact-us {
     margin-top:5px;
@@ -507,7 +509,7 @@ footer ul {
  .places-to-visit {
      height:18vh;
  }
- 
+
  .about .about-text {
      margin:0 auto;
      width:70%;
