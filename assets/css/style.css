@@ -1,474 +1,427 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@469&family=Pacifico&family=Spicy+Rice&display=swap');
+
 /*
 font-family: 'Pacifico', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Spicy Rice', cursive;
 */
-body{
-background:#f7f7f7;
 
+body {
+	background: #f7f7f7;
 }
-header,.place-to-go{
-    height:100vh;
-    width:100%;
+header,
+.place-to-go {
+	height: 100vh;
+	width: 100%;
 }
-
 /*---------------------------------------- place-to-go --------*/
-.try {
-    background: rgba(0, 0, 0, 0.4);
-    width:100%;
-    position:absolute;
-    height:100%;
-    padding:0;
-    margin-left:-15px;
 
+.try {
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	padding: 0;
+	margin-left: -15px;
 }
 .frame {
-    min-height:27.5vh;
-    top:1.25vh;
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+	min-height: 27.5vh;
+	top: 1.25vh;
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
 }
 .frame:hover {
- -webkit-box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important; 
-  box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
-}    
-.jamaica, .canada, .norway{
-    min-height:31vh;
-    background:#f7f7f7;  
+	-webkit-box-shadow: -2px 8px 25px 0px rgba(0, 0, 0, 0.85)!important;
+	box-shadow: -2px 8px 25px 0px rgba(0, 0, 0, 0.85)!important;
 }
-.jamaica:hover, .canada:hover, .norway:hover{
-   height:27.5vh;
+.jamaica,
+.canada,
+.norway {
+	min-height: 31vh;
+	background: #f7f7f7;
+}
+.jamaica:hover,
+.canada:hover,
+.norway:hover {
+	height: 27.5vh;
 }
 .your-destination {
-    height:7vh;
-    background:#f7f7f7f7;
-    margin:0;
-    padding:0;
+	height: 7vh;
+	background: #f7f7f7f7;
+	margin: 0;
+	padding: 0;
 }
-
 .your-destination h1 {
-     text-align:center;
-     font-family: 'Oswald', sans-serif;
-     font-size:36px;
-     line-height:7vh;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	line-height: 7vh;
 }
-
 .picture {
-    min-height:26vh; 
-    background:url("../images/jamaica/women-on-swings.jpg");
-    background-size:cover; 
-    margin-top:0.75vh;  
+	min-height: 26vh;
+	background: url("../images/jamaica/women-on-swings.jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-
 .picture-1 {
-    min-height:26vh;
-    background:url("../images/jamaica/jamaica-sunset.jpg");
-    background-size:cover;  
-    margin-top:0.75vh;
+	min-height: 26vh;
+	background: url("../images/jamaica/jamaica-sunset.jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-
-.picture-2{
-    min-height:26vh;
-    background:url("../images/jamaica/jamaica-1303880_1920.jpg");
-    background-size:cover;  
-    background-position:bottom;
-    margin-top:0.75vh;
+.picture-2 {
+	min-height: 26vh;
+	background: url("../images/jamaica/jamaica-1303880_1920.jpg");
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 0.75vh;
 }
-
-.picture-3{
-    min-height:26vh;
-    background:url("../images/canada/2048px-Moraine_Lake_(Unsplash).jpg");
-    background-size:cover; 
-     margin-top:0.75vh;
+.picture-3 {
+	min-height: 26vh;
+	background: url("../images/canada/2048px-Moraine_Lake_(Unsplash).jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-     
 .picture-4 {
-    min-height:26vh;
-    background:url("../images/canada/6062033422_102d687269_k.jpg");
-    background-size:cover;  
-    margin-top:0.75vh; 
+	min-height: 26vh;
+	background: url("../images/canada/6062033422_102d687269_k.jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-
-.picture-5{
-    min-height:26vh;
-    background:url("../images/canada/woman-2896389_1920.jpg");
-    background-size:cover;  
-    background-position:bottom;
-    margin-top:0.75vh;
+.picture-5 {
+	min-height: 26vh;
+	background: url("../images/canada/woman-2896389_1920.jpg");
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 0.75vh;
 }
-
 .picture-6 {
-    min-height:26vh;
-    background:url("../images/norway/4669043022_2e375d5bd2_k.jpg");
-    background-size:cover; 
-    margin-top:0.75vh;
+	min-height: 26vh;
+	background: url("../images/norway/4669043022_2e375d5bd2_k.jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-
 .picture-7 {
-    min-height:26vh;
-    background:url("../images/norway/5937648493_535ef9d1da_h.jpg");
-    background-size:cover;  
-    margin-top:0.75vh;
-  
+	min-height: 26vh;
+	background: url("../images/norway/5937648493_535ef9d1da_h.jpg");
+	background-size: cover;
+	margin-top: 0.75vh;
 }
-
 .picture-8 {
-    min-height:26vh;
-    background:url("../images/norway/The_Sognefjord.jpg");
-    background-size:cover;  
-    background-position:bottom;
-    margin-top:0.75vh;
+	min-height: 26vh;
+	background: url("../images/norway/The_Sognefjord.jpg");
+	background-size: cover;
+	background-position: bottom;
+	margin-top: 0.75vh;
 }
-
 .name-of-place {
-    position:absolute;
-    height:10vh;
-    width:100%;
-    z-index:1;
-    top:0.75vh; 
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	z-index: 1;
+	top: 0.75vh;
 }
-
 .name-of-place h2 {
-    text-align:center;
-    color:#f7f7f7;
-    line-height:26vh;
+	text-align: center;
+	color: #f7f7f7;
+	line-height: 26vh;
 }
-
 #jamaica-diff1 {
-    width:1%;
-    height:26vh;
-    background:White; 
-    position:absolute;
-    z-index:1;
-    left:32.8%;
-    top:0.75vh;
+	width: 1%;
+	height: 26vh;
+	background: White;
+	position: absolute;
+	z-index: 1;
+	left: 32.8%;
+	top: 0.75vh;
 }
-
 #jamaica-diff2 {
-    width:1%;
-    height:26vh;
-    background:white;
-    position:absolute;
-    z-index:1;
-    right:32.8%;
-    top:0.75vh;
+	width: 1%;
+	height: 26vh;
+	background: white;
+	position: absolute;
+	z-index: 1;
+	right: 32.8%;
+	top: 0.75vh;
 }
-
-#canada-diff1{
-    width:1%;
-    height:26vh;
-    background:white;
-    position:absolute;
-    z-index:1;
-    right:32.8%;
-    top:0.75vh;
+#canada-diff1 {
+	width: 1%;
+	height: 26vh;
+	background: white;
+	position: absolute;
+	z-index: 1;
+	right: 32.8%;
+	top: 0.75vh;
 }
-
-#canada-diff2{
-    width:1%;
-    height:26vh;
-    background:white;
-    position:absolute;
-    z-index:1;
-    left:32.8%;
-    top:0.75vh;
+#canada-diff2 {
+	width: 1%;
+	height: 26vh;
+	background: white;
+	position: absolute;
+	z-index: 1;
+	left: 32.8%;
+	top: 0.75vh;
 }
-
-#norway-diff1{
-    width:1%;
-    height:26vh;
-    background:white;
-    position:absolute;
-    z-index:1;
-    right:32.8%;
-    top:0.75vh;
+#norway-diff1 {
+	width: 1%;
+	height: 26vh;
+	background: white;
+	position: absolute;
+	z-index: 1;
+	right: 32.8%;
+	top: 0.75vh;
 }
-
-#norway-diff2{
-    width:1%;
-    height:26vh;
-    background:white;
-    position:absolute;
-    z-index:1;
-    left:32.8%;
-    top:0.75vh;
+#norway-diff2 {
+	width: 1%;
+	height: 26vh;
+	background: white;
+	position: absolute;
+	z-index: 1;
+	left: 32.8%;
+	top: 0.75vh;
 }
-   
 /*---------------------------------------- top bar of the map --------*/
+
 .top-bar {
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.85);
-    color:#f7f7f7;   
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.85);
+	color: #f7f7f7;
 }
-
-.city-to-visit, .places-to-visit {
-    border:1px solid #f7f7f7;
+.city-to-visit,
+.places-to-visit {
+	border: 1px solid #f7f7f7;
 }
-
-.city-to-visit,.places-to-visit h5 {
-    text-align:center;
+.city-to-visit,
+.places-to-visit h5 {
+	text-align: center;
 }
-
-
 .places-to-visit input[type=checkbox] {
-    width:fit-content;
-    margin:0 auto;
+	width: fit-content;
+	margin: 0 auto;
 }
-
 .checkbox {
-    width:fit-content;
-    margin:0 auto;
+	width: fit-content;
+	margin: 0 auto;
 }
-
 .map-section {
-    background-color:#f7f7f7;
+	background-color: #f7f7f7;
 }
-
 #map {
-    height:100vh;   
+	height: 100vh;
 }
-
 .maps {
-    padding:0;
+	padding: 0;
 }
 /*---------------------------------------- contact us--------*/
+
 .contact-us-section {
-    background-color:#f7f7f7;
+	background-color: #f7f7f7;
 }
-
-.contact-us{
-    text-align:center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    margin-top:25px;
-    color:#333333;
+.contact-us {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem;
+	margin-top: 25px;
+	color: #333333;
 }
-
 form {
-    width:70%;
-    margin:0 auto;
+	width: 70%;
+	margin: 0 auto;
 }
-
 .form-button {
-    background:#29a5e2;
+	background: #29a5e2;
 }
 /*---------------------------------------- about us--------*/
-.about > h2 {   
-    font-family: 'Oswald', sans-serif;
-    text-align:center;
-    text-transform: capitalize;
-    padding-top:30px;
-    padding-bottom:15px;
-}
 
+.about > h2 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	text-transform: capitalize;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
 .about p {
-    padding-top:20px;
-    font-family: 'Oswald', sans-serif;
-    font-size:1.25rem;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color:#666666;
-    font-weight:500;
-    text-align:justify;
+	padding-top: 20px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: #666666;
+	font-weight: 500;
+	text-align: justify;
 }
-
 /*---------------------------------------- Footer--------*/
+
 footer {
-    padding:0 !important;
-    margin-top:25px;
-    background:#f7f7f7;
+	padding: 0 !important;
+	margin-top: 25px;
+	background: #f7f7f7;
 }
 footer ul {
-    margin:0;
+	margin: 0;
 }
-
 .social-links {
-  display: flex;
-  justify-content: center;
-  padding:0;
-  height:64px;
-  background-color:#666666;
-  
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	height: 64px;
+	background-color: #666666;
 }
-
 .social-links li {
-   margin-top:8px;
-   display:inline-block;
-   width:48px;
-   height:48px;
-   line-height:46px;
-   background:#f7f7f7;
-   border-radius:24px;
-   text-align:center;
+	margin-top: 8px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	line-height: 46px;
+	background: #f7f7f7;
+	border-radius: 24px;
+	text-align: center;
 }
-
 .social-links li i {
-    font-size:32px;
-    vertical-align:middle;
-    color:#29a5e2;
-
+	font-size: 32px;
+	vertical-align: middle;
+	color: #29a5e2;
 }
-
 /*---------------------------------------- Info Window--------*/
 
 .info-window h6 span {
-    color: rgba(241, 176, 55, 0.849);
+	color: rgba(241, 176, 55, 0.849);
 }
 /*---------------------------------------- the white seperator in the picures --------*/
+
 @media only screen and (max-width: 992px) {
-  #place-to-go  {
-    height:250vh;
-  }
-
-  #jamaica-diff1 {
-      visibility: hidden;
-  }
-
-  #jamaica-diff2 {
-      visibility: hidden;
-  }
-
-  #canada-diff1 {
-      visibility: hidden;
-  }
-
-  #canada-diff2 {
-      visibility: hidden;
-  }
-
-  #norway-diff1 {
-      visibility: hidden;
-  }
-
-  #norway-diff2 {
-      visibility: hidden;
-  }
+	#place-to-go {
+		height: 250vh;
+	}
+	#jamaica-diff1 {
+		visibility: hidden;
+	}
+	#jamaica-diff2 {
+		visibility: hidden;
+	}
+	#canada-diff1 {
+		visibility: hidden;
+	}
+	#canada-diff2 {
+		visibility: hidden;
+	}
+	#norway-diff1 {
+		visibility: hidden;
+	}
+	#norway-diff2 {
+		visibility: hidden;
+	}
 }
 /*---------------------------------------- for smaller screens--------*/
+
 @media only screen and (max-width: 321px) {
-  .contact-us {
-    margin-top:5px;
-    font-size:32px;
-  }
-  #map {
-      height:80vh;
-  }
-  .city-to-visit{
-      height:10vh;
-      
-  }
-  .place-to-visit {
-      height:10vh;
-  }
+	.contact-us {
+		margin-top: 5px;
+		font-size: 32px;
+	}
+	#map {
+		height: 80vh;
+	}
+	.city-to-visit {
+		height: 10vh;
+	}
+	.place-to-visit {
+		height: 10vh;
+	}
 }
 @media only screen and (max-width: 767px) {
- #map {
-     height:80vh;
-     margin-top:0;   
- }
-
- .city-to-visit {
-     height:10vh;
- }
-
- .places-to-visit {
-     height:10vh;
- }
- .city-to-visit,.places-to-visit label {
- font-size:13px;
-}
-
-
- .about p {
-     padding-left:20px;
-     padding-right:20px;
- }
-
- form{
-     width:100%;
- }
-
+	#map {
+		height: 80vh;
+		margin-top: 0;
+	}
+	.city-to-visit {
+		height: 10vh;
+	}
+	.places-to-visit {
+		height: 10vh;
+	}
+	.city-to-visit,
+	.places-to-visit label {
+		font-size: 13px;
+	}
+	.about p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	form {
+		width: 100%;
+	}
 }
 @media only screen and (min-width: 768px) {
- #map {
-     height:92vh;
-     margin-top:0;   
- }
-
- .city-to-visit {
-     height:8vh;
- }
-
- .places-to-visit {
-     height:8vh;
- }
-
- .about .about-text {
-     margin:0 auto;
-     width:70%;
- }
+	#map {
+		height: 92vh;
+		margin-top: 0;
+	}
+	.city-to-visit {
+		height: 8vh;
+	}
+	.places-to-visit {
+		height: 8vh;
+	}
+	.about .about-text {
+		margin: 0 auto;
+		width: 70%;
+	}
 }
- @media only screen and (orientation:landscape) and (max-width:900px) { 
-
-#map {
-     height:64vh;
-     margin-top:0;   
- }
-
- .city-to-visit {
-     height:18vh;
- }
-
- .places-to-visit {
-     height:18vh;
- }
-
- .about .about-text {
-     margin:0 auto;
-     width:70%;
- }
-
- .your-destination {
-    height:10vh;
-    background:#f7f7f7f7;
-    margin:0;
-    padding:0;
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+	#map {
+		height: 64vh;
+		margin-top: 0;
+	}
+	.city-to-visit {
+		height: 18vh;
+	}
+	.places-to-visit {
+		height: 18vh;
+	}
+	.about .about-text {
+		margin: 0 auto;
+		width: 70%;
+	}
+	.your-destination {
+		height: 10vh;
+		background: #f7f7f7f7;
+		margin: 0;
+		padding: 0;
+	}
+	.your-destination h1 {
+		text-align: center;
+		font-family: 'Oswald', sans-serif;
+		font-size: 36px;
+		line-height: 10vh;
+	}
+	#place-to-go {
+		height: 920vh;
+	}
+	.picture,
+	.picture-1,
+	.picture-2,
+	.picture-3,
+	.picture-4,
+	.picture-5,
+	.picture-6,
+	.picture-7,
+	.picture-8 {
+		height: 100vh;
+	}
 }
-
- .your-destination h1 {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-    line-height: 10vh;
- }
-
- #place-to-go  {
-  height:920vh;
-  }
-
- .picture,.picture-1,.picture-2,.picture-3,.picture-4,.picture-5,.picture-6,.picture-7,.picture-8 {
-     height:100vh;
- }
-    
- }
- @media screen and (orientation:landscape) and (max-width:768px) { 
-
-#map {
-     height:100vh;
-     margin-top:0;   
- }
-
- .city-to-visit {
-     height:18vh;
- }
-
- .places-to-visit {
-     height:18vh;
- }
-
- .about .about-text {
-     margin:0 auto;
-     width:70%;
- }
-    
- }
+@media screen and (orientation: landscape) and (max-width: 768px) {
+	#map {
+		height: 100vh;
+		margin-top: 0;
+	}
+	.city-to-visit {
+		height: 18vh;
+	}
+	.places-to-visit {
+		height: 18vh;
+	}
+	.about .about-text {
+		margin: 0 auto;
+		width: 70%;
+	}
+}

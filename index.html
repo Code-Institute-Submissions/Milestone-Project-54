@@ -5,9 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Plan Your Journey</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Plan Your Journey</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/fa14b2a9bf.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -19,8 +18,8 @@
    })();
 	</script>
 </head>
+
 <body>
-	
 	<!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
 	<section class="container-fluid" id="place-to-go">
 		<div class="row">
@@ -109,94 +108,83 @@
 				<label for="kingston">Kingston</label>
 				<input type="radio" name="city" value="kingston" id="kingston" checked/>
 				<label for="Moraine-Lake">Moraine Lake</label>
-				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake"/>
+				<input type="radio" name="city" value="Moraine-Lake" id="Moraine-Lake" />
 				<label for="Sognefjord">Sognefjord</label>
-				<input type="radio" name="city" value="Sognefjord" id="Sognefjord"/>
-            </div>
-				<div class="col-md-6 places-to-visit">
-					<h5>Choose The Place</h5>
-					<div class="checkbox">
-						<label for="restaurant">Restaurants</label>
-						<input type="radio" name="visit" value="restaurants" id="restaurant">
-						<label for="hotels">Hotels</label>
-						<input type="radio" name="visit" value="hotels" id="hotels" checked>
-						<label for="beach">Beach</label>
-						<input type="radio" name="visit" value="beach" id="beach">
-                     </div>
-					</div>
+				<input type="radio" name="city" value="Sognefjord" id="Sognefjord" />
+			</div>
+			<div class="col-md-6 places-to-visit">
+				<h5>Choose The Place</h5>
+				<div class="checkbox">
+					<label for="restaurant">Restaurants</label>
+					<input type="radio" name="visit" value="restaurants" id="restaurant">
+					<label for="hotels">Hotels</label>
+					<input type="radio" name="visit" value="hotels" id="hotels" checked>
+					<label for="beach">Beach</label>
+					<input type="radio" name="visit" value="beach" id="beach">
 				</div>
-				<div class="row">
-					<div class="col-12 maps">
-						<div id="map">
-						</div>
-					</div>
-				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 maps">
+				<div id="map"></div>
+			</div>
+		</div>
 	</section>
 	<!-- contact us form and about us -->
 	<section class="container-fluid contact-us-section">
-    <div class="row">
-    	<div class="about">
+		<div class="row">
+			<div class="about">
 				<h2>About Us</h2>
 				<div class="about-text">
-					<p>We are a small company helping people to choose the place to travel. On this website you will find the three places where you could travel to and you will be able to choose the city and the place to go on google map. This website might be helpful if you will be in one of those places. We might be able to give you recommendation on the best value for hotel, or provide some additional information regarding the city and traveling experience. You are more then welcome to contact us if you have any questions. </p>
+					<p>We are a small company helping people to choose the place to travel. On this website you will find the three places where you could travel to and you will be able to choose the city and the place to go on google map. This website might be helpful if you will be in one of those places. We might be able to give you recommendation on the best value for hotel, or provide some additional information regarding the city and traveling experience. You are more then welcome to contact us if you have any questions.</p>
 				</div>
 			</div>
-    </div>
+		</div>
 		<div class="row">
 			<div class="col-12">
 				<h2 class="contact-us">Contact Us</h2>
 				<form onsubmit="return sendEmail(this);" method="post">
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" aria-describedby="name"  required aria-required="true">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						<input type="text" class="form-control" id="name" aria-describedby="name" required aria-required="true">	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					</div>
 					<div class="form-group">
 						<label for="email">Email address</label>
 						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
 					</div>
-						<div class="form-group">
-							<label for="textarea">Message</label>
-							<textarea class="form-control" name="textarea" id="textarea"  rows="3" required></textarea>
-                          
-						</div>
-						<button type="submit" class="btn btn-primary form-button">Submit</button>
+					<div class="form-group">
+						<label for="textarea">Message</label>
+						<textarea class="form-control" name="textarea" id="textarea" rows="3" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary form-button">Submit</button>
 				</form>
 			</div>
-		
 		</div>
 	</section>
 	<footer class="container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<ul class="social-links">
-					<li><a href="https://www.facebook.com/"
-							target="_blank"><i class="fab fa-facebook-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i><span class="sr-only sr-only-focusable"></span></a>
 					</li>
-					<li><a href="https://twitter.com/"
-							target="_blank"><i class="fab fa-twitter-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					<li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i><span class="sr-only sr-only-focusable"></span></a>
 					</li>
-					<li><a href="https://www.instagram.com/"
-							target="_blank"><i class="fab fa-instagram-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i><span class="sr-only sr-only-focusable"></span></a>
 					</li>
-					<li><a href="https://www.pinterest.co.uk/"
-							target="_blank"><i class="fab fa-pinterest-square"></i><span class="sr-only sr-only-focusable"></span></a>
+					<li><a href="https://www.pinterest.co.uk/" target="_blank"><i class="fab fa-pinterest-square"></i><span class="sr-only sr-only-focusable"></span></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</footer>
 	<script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/script.js"></script>
-<script src="assets/js/mapscript.js"></script>
-<script
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
-	async defer></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/mapscript.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap" async defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 </body>
+
 </html>
