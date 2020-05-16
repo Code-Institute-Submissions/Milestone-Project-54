@@ -4,6 +4,9 @@ font-family: 'Pacifico', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Spicy Rice', cursive;
 */
+body{
+background:#f7f7f7;
+}
 header,.place-to-go{
     height:100vh;
     width:100%;
@@ -235,7 +238,7 @@ header,.place-to-go{
     text-align:center;
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    margin-top:80px;
+    margin-top:25px;
     color:#333333;
 }
 
@@ -250,11 +253,10 @@ form {
 /*---------------------------------------- about us--------*/
 .about > h2 {   
     font-family: 'Oswald', sans-serif;
-    margin-top:20px;
     text-align:center;
     text-transform: capitalize;
-    padding-top:50px;
-    padding-bottom:25px;
+    padding-top:30px;
+    padding-bottom:15px;
 }
 
 .about p {
@@ -271,11 +273,11 @@ form {
 /*---------------------------------------- Footer--------*/
 footer {
     padding:0 !important;
+    margin-top:25px;
+    background:#f7f7f7;
 }
-
 footer ul {
     margin:0;
-
 }
 
 .social-links {
