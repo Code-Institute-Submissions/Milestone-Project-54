@@ -6,6 +6,7 @@ font-family: 'Spicy Rice', cursive;
 */
 body{
 background:#f7f7f7;
+
 }
 header,.place-to-go{
     height:100vh;
@@ -208,6 +209,7 @@ header,.place-to-go{
     text-align:center;
 }
 
+
 .places-to-visit input[type=checkbox] {
     width:fit-content;
     margin:0 auto;
@@ -343,29 +345,43 @@ footer ul {
   }
 }
 /*---------------------------------------- for smaller screens--------*/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
   .contact-us {
     margin-top:5px;
     font-size:32px;
   }
+  #map {
+      height:80vh;
+  }
+  .city-to-visit{
+      height:10vh;
+      
+  }
+  .place-to-visit {
+      height:10vh;
+  }
 }
 @media only screen and (max-width: 767px) {
  #map {
-     height:82vh;
+     height:80vh;
      margin-top:0;   
  }
 
  .city-to-visit {
-     height:9vh;
+     height:10vh;
  }
 
  .places-to-visit {
-     height:9vh;
+     height:10vh;
  }
+ .city-to-visit,.places-to-visit label {
+ font-size:13px;
+}
+
 
  .about p {
-     padding-left:10px;
-     padding-right:10px;
+     padding-left:20px;
+     padding-right:20px;
  }
 
  form{

@@ -51,12 +51,13 @@ Features planned, implemented and outlined for later development
 - Documentation - ReadMe File, Licence & Mockups
 - Colour Scheme
 - slider
+- weather forecasts API
 - Favicon
 - Bootstrap - HTML, CSS Framework
     - Grid System - Columns and Rows
 - Responsive design - Mobile First
+- Google Places API
 - UX elements
-    - Animations
 - Accesibility
 - contact Form
 - Git - Version Control System
@@ -69,8 +70,8 @@ Features planned, implemented and outlined for later development
 - Bootstrap - HTML, CSS Framework
     - Grid System - Columns and Rows  
 - Responsive design - Mobile First
+- Google Places API
 - UX elements
-    - Animations
 - Accesibility
 - Gitpod - Version Control System
 - GitHub - Remote Repository
@@ -78,7 +79,9 @@ Features planned, implemented and outlined for later development
 
 
 ### Features Left to Implement
+- favicon
 - custom logo
+- weather forecast API
 ## Technologies Used
 This project makes use of:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -111,24 +114,41 @@ This project makes use of:
     - used to make a mockup
 
 ## Testing
-   The first part of the page website choose your journey.
+
+### Manual Testing
+
+- The first part of the page website choose your journey.
+
    1. Hover over it has to apply the showdown underneath, by giving clear separation the section, all three sections behave that way. 
    2. click on hovered over a section, it will take to the map section and the markers will be dropped on the map accordingly. All. three sections behave the same. 
 
-The second part is a map.
+- The second part is a map.
 
-1If the selection was not selected in choose your journey the map will load automatically Kingston with hotels. click on radio buttons and the map will be displaying selected city, also if you will click on Choose The Place "Restaurants", "Hotels", "Beaches" the markers will be displayed accordingly. If you will click on the marker the info window will appear with the information about the place, some places will display how much time left until it closes, if it is closed, the day when it will be open again will be displayed. Some of the places have not provided the relevant information so will be displayed some kind of information such as picture, place name, rating, phone number address, or "open/close time is not specified might appear on the window".
+1If the selection was not selected in choose your journey the map will load automatically Kingston with hotels. click on radio buttons and the map will be displaying selected city, also if you will click on Choose The Place "Restaurants", "Hotels", "Beaches" the markers will be displayed accordingly. If you will click on the marker the info window will appear with the information about the place, some places will display how much time left until it closes, if it is closed, the day when it will be open again will be displayed. Some of the places have not provided the relevant information so will be displayed some  of information such as picture, place name, rating, phone number address, or "open/close time is not specified might appear on the window".
 The information accuracy was tested by sending website links to my friend living in different countries no matter what country the information was displayed correctly, we could see the same closing in time or is closed or open. 
-The third part id contacts us.
+
+
+- The third part is about a brief description of the service.
+
+- The third part id contacts us.
 
 1. If you will try to submit the form by missing any of the inputs, a message will be displayed, telling what section has to be filled in, it also checks the inputted email address to make sure it has the "@" symbol.
 2. Click submit, the owner will an email with all the details inputted, also "SUCCESS! 200 OK"  telling the email was sent successfully. The email is sent by using Emailjs service.
 
-The fourth part is about a brief description of the service.
+- Fifth is a footer containing social links all of them opens in a new tab and are working tested manually.
 
-Fifth is a footer containing social links all of them opens in a new tab and are working tested manually.
 
-This website was tested on Google Chrome, Opera, Mozilla Firefox, was working without any issues.
+
+### Code Validation
+   To validate the my CSS and HTML code I used [https://validator.w3.org/](https://validator.w3.org/)
+
+### Testing on Browsers
+
+Tested on Google Chrome, Opera, Mozzilla firefox. No issues. 
+
+### Testing on Devices 
+
+Used Google Chrome, Opera, Mozila firefox browser to test the responsiveness, it flows good on any type of device.
 
 ## Deployment
 
