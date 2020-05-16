@@ -88,6 +88,7 @@ Features planned, implemented and outlined for later development
 - favicon
 - custom logo
 - weather forecast API
+- For some reason on the phones on some of the marker displays undefinded instead of open or closed. 
 ## Technologies Used
 This project makes use of:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
