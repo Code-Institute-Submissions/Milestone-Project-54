@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<title>Document</title>
-   
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
 	</script>
 	<script type="text/javascript">
 		(function(){
@@ -22,58 +22,12 @@
 </head>
 
 <body>
-	<header hidden class="container-fluid no-gutters">
-		<div class="row">
-			<div class="col-12">
-				<div id="slider0">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-				<div id="slider1">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-				<div id="slider2">
-					<div class="description">
-						<h2>Jamaica-Kingston</h2>
-						<p>Here will be the desription</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="buttons-container">
-				<div>
-					<div class="buttons">
-						<a href="#place-to-go">
-							<p>Plan your journy</p>
-						</a>
-					</div>
-					<div class="buttons">
-						<a href="#">
-							<p>Contact Us</p>
-						</a>
-
-					</div>
-					<div class="buttons">
-						<a href="#">
-							<p>See More Pictures</p>
-						</a>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</header>
+	
 	<!--This secton offers 3 choices of the places to go and when the user hovers it shows whisch one is hovered and when clickes it ttakes to the map preselected place.-->
 	<section class="container-fluid" id="place-to-go">
 		<div class="row">
 			<div class="your-destination  col-sm-12">
-				<h2>Choose Your Journey</h2>
+				<H1>Choose Your Journey</h1>
 			</div>
 			<div class="select-destination jamaica col">
 				<div class="row">
@@ -180,6 +134,7 @@
 					</div>
 				</div>
 	</section>
+	<!-- contact us form and about us -->
 	<section class="container-fluid contact-us-section">
 		<div class="row">
 			<div class="col-12">
@@ -210,11 +165,9 @@
 						where to go, on google map, this website might be helpful if you will be in one of those places.
 						You are more then welcome to contact us if you have any questions. We might get the best value
 						for the hotel, or provide some additional information regarding the city or traveling
-						experience. ß </p>
+						experience. </p>
 				</div>
-
 			</div>
-
 		</div>
 	</section>
 	<footer class="container-fluid">
@@ -238,94 +191,9 @@
 		</div>
 	</footer>
 	<script src="assets/js/sendEmail.js"></script>
-
-
 </body>
-<script>
-	/*
-    var map;
-      var service;
-      var infowindow;
-
-      function initMap() {
-        var kingston = new google.maps.LatLng(18.020067, -76.796858);
-
-        infowindow = new google.maps.InfoWindow();
-
-        map = new google.maps.Map(
-            document.getElementById('map'), {center: kingston, zoom: 15});
-
-       var request = {
-         location: kingston,
-         radius: '500',
-         query: 'hotels'
-   };
-        service = new google.maps.places.PlacesService(map);
-        service.textSearch(request, function(results, status) {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            for (var i = 0; i < results.length; i++) {
-              createMarker(results[i]);
-            }
-            map.setCenter(results[0].geometry.location);
-          }
-        });
-      }
-      function createMarker(place) {
-        var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-        });
-/*
-        function openTimes(a){
-   var request = {
-  placeId: place.place_id,
-  fields: ['name', 'rating', 'formatted_phone_number', 'opening_hours']
-};
-
- service = new google.maps.places.PlacesService(map);
- service.getDetails(request, callback);
-
-function callback(place, status) {
-        //console.log(place.opening_hours.open_now);
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-     if(place.opening_hours.open_now==false) {
-         console.log (
-             "is working"            
-         );
-    //console.log("here"+JSON.stringify(place),place.opening_hours.weekday_text);
-          var b=place.opening_hours.weekday_text;
-         return b;
-     }else {
-         return "open";
-     }
-           // console.log(place.opening_hours.open_now);
-          //var c= place.opening_hours.weekday_text;
-          
-  }
-}
-}
-
-          //  console.log(JSON.stringify(place));
-               function isItOpen() {
-             if (place.opening_hours.open_now==false){
-                    return '<h6 style="text-align:center;margin-top:3px;color:red;">Closed</h6';                      
-                }else {
-                    return'<h6 style="text-align:center;margin-top:3px">Open</h6';
-                }               
-            }
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(`<h5 style="text-align:center">${place.name}</h5><br>`+
-                               `<img style=" display: block;margin-left: auto;margin-right: auto;" src="${place.photos[0].getUrl({maxWidth:200,maxHeight:200})}"/>`+"<br>"+
-                              isItOpen()
-          );
-          infowindow.open(map, this);
-        });
-     
-      }
-*/
-</script>
 <script src="assets/js/script.js"></script>
-<script  src="assets/js/mapscript.js"></script>
+<script src="assets/js/mapscript.js"></script>
 <script
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgXTutCSge3sg5LWolZuBWBL6_VlRdh28&libraries=places&callback=initMap"
 	async defer></script>

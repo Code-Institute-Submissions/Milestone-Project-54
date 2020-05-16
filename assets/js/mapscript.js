@@ -22,13 +22,13 @@ var resultsTexSearch = [];
 
 function initMap() {
 
-// when clicked on the pictures, takes to the map area and preselectes the radio buttons accordingly.
+    // when clicked on the pictures, takes to the map area and preselectes the radio buttons accordingly.
     $("#jamaica").click(function () {
         city = new google.maps.LatLng(18.020067, -76.796858);
         visit = "hotels";
         search(city, visit);
         $("#kingston").prop("checked", true);
-        $("#hotels").prop("checked", true);       
+        $("#hotels").prop("checked", true);
     });
     $("#norway").click(function () {
         city = new google.maps.LatLng(61.170106, 6.581191);
@@ -39,7 +39,7 @@ function initMap() {
     });
     $("#canada").click(function () {
         city = new google.maps.LatLng(51.322047, -116.185993);
-       visit = "hotels";
+        visit = "hotels";
         search(city, visit);
         $("#Sognefjord").prop("checked", true);
         $("#hotels").prop("checked", true);
@@ -53,30 +53,30 @@ function initMap() {
         zoom: 12
     });
     search(city, visit);
-//according to an option calls the function search(city, visit), which will make a request and will coll creates createMarkersfunction to make markers 
+    //according to an option calls the function search(city, visit), which will make a request and will coll creates createMarkersfunction to make markers 
     $("input[type='radio']").change(function () {
         if (this.value == "kingston") {
-            city = new google.maps.LatLng(18.020067, -76.796858);        
+            city = new google.maps.LatLng(18.020067, -76.796858);
             search(city, visit);
         } else if (this.value == "Moraine-Lake") {
-            city = new google.maps.LatLng(51.322047, -116.185993);    
-           search(city, visit);
+            city = new google.maps.LatLng(51.322047, -116.185993);
+            search(city, visit);
         } else if (this.value == "Sognefjord") {
             city = new google.maps.LatLng(61.170106, 6.581191);
-         search(city, visit);
-        }   
+            search(city, visit);
+        }
     });
     $("input[type='radio']").change(function () {
         if (this.value == "hotels") {
-            visit = "hotels";             
-              search(city, visit);
+            visit = "hotels";
+            search(city, visit);
         } else if (this.value == "restaurants") {
-            visit = "restaurants";        
-             search(city, visit);
+            visit = "restaurants";
+            search(city, visit);
         } else if (this.value == "beach") {
-            visit = "beach";          
-             search(city, visit);
-        }      
+            visit = "beach";
+            search(city, visit);
+        }
     });
     // makes a request 
     function search(city, visit) {
@@ -102,7 +102,7 @@ function initMap() {
                     service.getDetails(request1, function (open, status) {
                         if (status === google.maps.places.PlacesServiceStatus.OK) {
                             resultsPlace.push(open);
-                           console.log(open);
+                            console.log(open);
                         }
                     });
                 }
@@ -120,19 +120,19 @@ function jamaicaTime() {
 }
 // for deleting makrkers when the radio button is swithed over
 function setMapOnAll(map) {
-    for (var i = 0; i <  mapMarkers.length; i++) {
+    for (var i = 0; i < mapMarkers.length; i++) {
         mapMarkers[i].setMap(map);
     }
-    console.log("this is for map"+map)
+    console.log("this is for map" + map)
 }
- function clearMarkers() {
-        setMapOnAll(null);
-      }
+function clearMarkers() {
+    setMapOnAll(null);
+}
 
 function deleteMarkers() {
-        clearMarkers();
-        mapMarkers = [];
-      }
+    clearMarkers();
+    mapMarkers = [];
+}
 // creates the markers
 function createMarker(place) {
     // compares two arrays in order to match the place by name.
@@ -145,7 +145,7 @@ function createMarker(place) {
                 for (var a = 0; a < resultsPlace.length; a++) {
                     if (resultsPlace[a].name == found) {
                         try {
-                           // responsible for calculating the time how much left until it closes. or when it will be opened again.
+                            // responsible for calculating the time how much left until it closes. or when it will be opened again.
                             date = new Date();
                             openDay = date.getDay();
                             var dd = date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60);
@@ -155,17 +155,17 @@ function createMarker(place) {
                                 OpenDay = 0;
                             }
                             openHours = date.getHours();
-                            n = date.getTimezoneOffset();                        
+                            n = date.getTimezoneOffset();
                             closesH = ((resultsPlace[a].opening_hours.periods[date.getDay()].close.hours) * 60 + resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - ((date.getHours()) * 60)) - date.getMinutes();
                             closesM = resultsPlace[a].opening_hours.periods[date.getDay()].close.minutes - date.getMinutes();
                             b = Math.floor((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60);
                             k = Math.floor(((closesH + Math.abs(resultsPlace[a].utc_offset_minutes + n)) / 60 - b) * 60);
                             if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) > 24)) {
-                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+resultsPlace[a].opening_hours.periods[date.getDay()].close.hours+"dd"+dd +"daugiau";
-                            } else if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) < 24))  {
-                               return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay+1]+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>'+resultsPlace[a].opening_hours.periods[date.getDay()].close.hours+"dd"+dd+"maziau";
-                            }else if (resultsPlace[a].opening_hours.isOpen() == true){
-                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">'+ b + "H:" + k+"m"+ '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href='+ resultsPlace[a].url + '>open on google maps</a></p></div>'+"dd"+dd+"be salygos";
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay] + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>' + resultsPlace[a].opening_hours.periods[date.getDay()].close.hours + "dd" + dd + "daugiau";
+                            } else if ((resultsPlace[a].opening_hours.isOpen() == false) && (date.getHours() + ((Math.abs(resultsPlace[a].utc_offset_minutes) + Math.abs(n)) / 60) < 24)) {
+                                return '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>closed, open again : </strong><span style="font-size:14px;font-weight:600; color:black">' + resultsPlace[a].opening_hours.weekday_text[openDay + 1] + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>' + resultsPlace[a].opening_hours.periods[date.getDay()].close.hours + "dd" + dd + "maziau";
+                            } else if (resultsPlace[a].opening_hours.isOpen() == true) {
+                                return closes = '<div class="info-window"><p style="margin-bottom:3px;color:#fc6f03"><strong>Closing In </strong><span style="font-size:14px;font-weight:600; color:black">' + b + "H:" + k + "m" + '</span></p><strong>Phone:</strong>' + resultsPlace[a].formatted_phone_number + '<br><p style="margin-top:4px"><a href=' + resultsPlace[a].url + '>open on google maps</a></p></div>' + "dd" + dd + "be salygos";
                             }
                         } catch (error) {
                             if (error.message == "Cannot read property 'close' of undefined") {
@@ -181,7 +181,7 @@ function createMarker(place) {
             }
         }
     }
- 
+
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
@@ -197,7 +197,7 @@ function createMarker(place) {
     });
     mapMarkers.push(marker);
     function isItOpen() {
-        try {        
+        try {
             if (place.opening_hours.open_now == false) {
                 return "Closed"
             } else {
@@ -286,8 +286,8 @@ function createMarker(place) {
             '<h6 style="text-align:center;margin-top:5px">' + place.name + '</h6>' +
             '<p>' + rating() +
             findtime(place.name) +
-            '</p><p><strong>Address:</strong>' + place.formatted_address + '</p></div>'      
+            '</p><p><strong>Address:</strong>' + place.formatted_address + '</p></div>'
         );
-        infowindow.open(map, this)    
+        infowindow.open(map, this)
     });
 }
