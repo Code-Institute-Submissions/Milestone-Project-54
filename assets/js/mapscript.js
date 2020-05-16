@@ -48,18 +48,31 @@ function initMap() {
 	infowindow = new google.maps.InfoWindow();
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: city,
-		zoom: 12
+		zoom: 14
 	});
 	search(city, visit);
 	//according to an option calls the function search(city, visit), which will make a request and will coll creates createMarkersfunction to make markers 
 	$("input[type='radio']").change(function() {
 		if(this.value == "kingston") {
+               map = new google.maps.Map(document.getElementById('map'), {
+		center: city,
+        zoom: 15
+        });
 			city = new google.maps.LatLng(18.020067, -76.796858);
-			search(city, visit);
+            search(city, visit);
+            
 		} else if(this.value == "Moraine-Lake") {
+            map = new google.maps.Map(document.getElementById('map'), {
+		center: city,
+        zoom: 12
+        });
 			city = new google.maps.LatLng(51.322047, -116.185993);
 			search(city, visit);
 		} else if(this.value == "Sognefjord") {
+            map = new google.maps.Map(document.getElementById('map'), {
+		center: city,
+		zoom: 11
+	});
 			city = new google.maps.LatLng(61.170106, 6.581191);
 			search(city, visit);
 		}
