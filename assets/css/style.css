@@ -41,24 +41,28 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     margin:0;
     padding:0;
 }
+
 .your-destination h1 {
      text-align:center;
      font-family: 'Oswald', sans-serif;
      font-size:36px;
      line-height:7vh;
 }
+
 .picture {
     min-height:26vh; 
     background:url("../images/jamaica/women-on-swings.jpg");
     background-size:cover; 
     margin-top:0.75vh;  
 }
+
 .picture-1 {
     min-height:26vh;
     background:url("../images/jamaica/jamaica-sunset.jpg");
     background-size:cover;  
     margin-top:0.75vh;
 }
+
 .picture-2{
     min-height:26vh;
     background:url("../images/jamaica/jamaica-1303880_1920.jpg");
@@ -80,6 +84,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     background-size:cover;  
     margin-top:0.75vh; 
 }
+
 .picture-5{
     min-height:26vh;
     background:url("../images/canada/woman-2896389_1920.jpg");
@@ -87,12 +92,14 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     background-position:bottom;
     margin-top:0.75vh;
 }
+
 .picture-6 {
     min-height:26vh;
     background:url("../images/norway/4669043022_2e375d5bd2_k.jpg");
     background-size:cover; 
     margin-top:0.75vh;
 }
+
 .picture-7 {
     min-height:26vh;
     background:url("../images/norway/5937648493_535ef9d1da_h.jpg");
@@ -100,6 +107,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     margin-top:0.75vh;
   
 }
+
 .picture-8 {
     min-height:26vh;
     background:url("../images/norway/The_Sognefjord.jpg");
@@ -107,6 +115,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     background-position:bottom;
     margin-top:0.75vh;
 }
+
 .name-of-place {
     position:absolute;
     height:10vh;
@@ -114,11 +123,13 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     z-index:1;
     top:0.75vh; 
 }
+
 .name-of-place h2 {
     text-align:center;
     color:#f7f7f7;
     line-height:26vh;
 }
+
 #jamaica-diff1 {
     width:1%;
     height:26vh;
@@ -128,6 +139,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     left:32.8%;
     top:0.75vh;
 }
+
 #jamaica-diff2 {
     width:1%;
     height:26vh;
@@ -137,6 +149,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     right:32.8%;
     top:0.75vh;
 }
+
 #canada-diff1{
     width:1%;
     height:26vh;
@@ -146,6 +159,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     right:32.8%;
     top:0.75vh;
 }
+
 #canada-diff2{
     width:1%;
     height:26vh;
@@ -155,6 +169,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     left:32.8%;
     top:0.75vh;
 }
+
 #norway-diff1{
     width:1%;
     height:26vh;
@@ -164,6 +179,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     right:32.8%;
     top:0.75vh;
 }
+
 #norway-diff2{
     width:1%;
     height:26vh;
@@ -173,34 +189,40 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     left:32.8%;
     top:0.75vh;
 }
-
-     
+   
 /*---------------------------------------- top bar of the map --------*/
 .top-bar {
     z-index: 1;
     background: rgba(0, 0, 0, 0.85);
     color:#f7f7f7;   
 }
+
 .city-to-visit, .places-to-visit {
     border:1px solid #f7f7f7;
 }
+
 .city-to-visit,.places-to-visit h5 {
     text-align:center;
 }
+
 .places-to-visit input[type=checkbox] {
     width:fit-content;
     margin:0 auto;
 }
+
 .checkbox {
     width:fit-content;
     margin:0 auto;
 }
+
 .map-section {
     background-color:#f7f7f7;
 }
+
 #map {
     height:100vh;   
 }
+
 .maps {
     padding:0;
 }
@@ -208,6 +230,7 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
 .contact-us-section {
     background-color:#f7f7f7;
 }
+
 .contact-us{
     text-align:center;
     font-family: 'Oswald', sans-serif;
@@ -215,10 +238,12 @@ box-shadow: -2px 8px 25px 0px rgba(0,0,0,0.85)!important;
     margin-top:80px;
     color:#333333;
 }
+
 form {
     width:70%;
     margin:0 auto;
 }
+
 .form-button {
     background:#29a5e2;
 }
@@ -231,6 +256,7 @@ form {
     padding-top:50px;
     padding-bottom:25px;
 }
+
 .about p {
     padding-top:20px;
     font-family: 'Oswald', sans-serif;
@@ -241,14 +267,17 @@ form {
     font-weight:500;
     text-align:justify;
 }
+
 /*---------------------------------------- Footer--------*/
 footer {
     padding:0 !important;
 }
+
 footer ul {
     margin:0;
 
 }
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -257,6 +286,7 @@ footer ul {
   background-color:#666666;
   
 }
+
 .social-links li {
    margin-top:8px;
    display:inline-block;
@@ -346,21 +376,27 @@ footer ul {
   #place-to-go  {
     height:250vh;
   }
+
   #jamaica-diff1 {
       visibility: hidden;
   }
+
   #jamaica-diff2 {
       visibility: hidden;
   }
+
   #canada-diff1 {
       visibility: hidden;
   }
+
   #canada-diff2 {
       visibility: hidden;
   }
+
   #norway-diff1 {
       visibility: hidden;
   }
+
   #norway-diff2 {
       visibility: hidden;
   }
@@ -376,54 +412,64 @@ footer ul {
      height:82vh;
      margin-top:0;   
  }
+
  .city-to-visit {
      height:9vh;
  }
+
  .places-to-visit {
      height:9vh;
  }
+
  .about p {
      padding-left:10px;
      padding-right:10px;
  }
+
  form{
      width:100%;
  }
-}
 
+}
 @media only screen and (min-width: 768px) {
  #map {
      height:92vh;
      margin-top:0;   
  }
+
  .city-to-visit {
      height:8vh;
  }
+
  .places-to-visit {
      height:8vh;
  }
+
  .about .about-text {
      margin:0 auto;
      width:70%;
  }
 }
-
-
  @media only screen and (orientation:landscape) and (max-width:900px) { 
+
 #map {
      height:64vh;
      margin-top:0;   
  }
+
  .city-to-visit {
      height:18vh;
  }
+
  .places-to-visit {
      height:18vh;
  }
+
  .about .about-text {
      margin:0 auto;
      width:70%;
  }
+
  .your-destination {
     height:10vh;
     background:#f7f7f7f7;
@@ -437,26 +483,31 @@ footer ul {
     font-size: 36px;
     line-height: 10vh;
  }
+
  #place-to-go  {
   height:920vh;
   }
+
  .picture,.picture-1,.picture-2,.picture-3,.picture-4,.picture-5,.picture-6,.picture-7,.picture-8 {
      height:100vh;
  }
     
-
  }
  @media screen and (orientation:landscape) and (max-width:768px) { 
+
 #map {
      height:100vh;
      margin-top:0;   
  }
+
  .city-to-visit {
      height:18vh;
  }
+
  .places-to-visit {
      height:18vh;
  }
+ 
  .about .about-text {
      margin:0 auto;
      width:70%;
