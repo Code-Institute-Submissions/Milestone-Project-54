@@ -111,8 +111,13 @@ This project makes use of:
     - used to make a mockup
 
 ## Testing
-    Tested on Mozilla firefox, Opera, Google Chrome and Safari browsers looked good responsive design.
-    sent few links to my friends and relatives, the feedbacks were good.
+   The first part of the page website chooses your journey.1. Hover over it has to apply the showdown underneath, by giving clear separation the section, all three sections behave that way. 2. click on hovered over a section, it will take to the map section and the markers will be dropped on the map accordingly. All. tree sections behave the same. 
+The second part a map.If the selection was not made in choose your journey the map will loa automatically Kingston with hotels. click on radio buttons and the map will be displaying selected city, also if you will click on Choose The Place "Restaurants", "Hotels", "Beaches" the markers will be displayed accordingly. If you will click on the marker the info window will appear with the information about the palace, some places will display how much time left until it closes, if it is closed, the day when it will be open again will be displayed. Some of the places have not provided the relevant information so will be displayed some kind of information such as picture, place name, rating, phone number address, or "open/close time is not specified might appear on the window".
+The information accuracy was tested by sending website links to my friend living in different countries no matter what country the information was displayed correctly, we could see the same closing in time or is closed or open. 
+The third part id contacts us.
+1. If you will try to submit the form by missing any of the inputs, a message will be displayed, telling what section has to be filled in, it also checks the inputted email address to make sure it has the "@" symbol.2. Click submit, the owner will an email with all the details inputted, also "SUCCESS! 200 OK"  telling the email was sent successfully. The email is sent by using Emailjs service.
+The fourth part is about a brief description of the service and fifth is a footer containing social links all of them opens in a new tab and are working tested manually.
+This website was tested on Google Chrome, Opera, Mozilla Firefox, was working without any issues.
 
 ## Deployment
 
