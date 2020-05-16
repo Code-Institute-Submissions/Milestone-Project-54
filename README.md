@@ -186,7 +186,7 @@ The benefits of hosting your website on GitHub pages is that any pushed changes 
 
 It may take a moment for changes to appear on the hosted website.
 
-##Credits
+## Credits
 
 ### Media
 
