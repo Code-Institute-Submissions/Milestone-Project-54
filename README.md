@@ -84,11 +84,13 @@ Features planned, implemented and outlined for later development
 - Deployed - Hosted on Github Pages
 
 
-### Features Left to Implement
+### Features Left to Implement/fix
 - favicon
 - custom logo
 - weather forecast API
 - For some reason on the phones on some of the marker displays undefinded instead of open or closed. 
+- Uncaught TypeError: Cannot read property '0' of undefined is desplayed when clicked on some of the markers, not fixed yet.
+ 
 ## Technologies Used
 This project makes use of:
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -135,14 +137,14 @@ This project makes use of:
 The information accuracy was tested by sending website links to my friend living in different countries no matter what country the information was displayed correctly, we could see the same closing in time or is closed or open. 
 
 
-- The third part is about a brief description of the service.
+- The third part is about us a brief description of the service.
 
 - The third part id contacts us.
 
 1. If you will try to submit the form by missing any of the inputs, a message will be displayed, telling what section has to be filled in, it also checks the inputted email address to make sure it has the "@" symbol.
-2. Click submit, the owner will an email with all the details inputted, also "SUCCESS! 200 OK"  telling the email was sent successfully. The email is sent by using Emailjs service.
+2. Click submit, than the owner will  recieve an email with all the details inputted, also "SUCCESS! 200 OK" will be logged out in th console telling the email was sent successfully. The email is sent by using Emailjs service.
 
-- Fifth is a footer containing social links all of them opens in a new tab and are working tested manually.
+- Fifth is a footer containing social links all of them opens in a new tab and are working, tested manually.
 
 
 

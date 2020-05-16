@@ -91,7 +91,6 @@ function initMap() {
 	// makes a request 
 	function search(city, visit) {
 		deleteMarkers();
-		console.log($("input[type='radio']").val());
 		var request = {
 			location: city,
 			radius: '500',
@@ -111,7 +110,6 @@ function initMap() {
 					service.getDetails(request1, function (open, status) {
 						if (status === google.maps.places.PlacesServiceStatus.OK) {
 							resultsPlace.push(open);
-							console.log(open);
 						}
 					});
 				}
@@ -125,7 +123,6 @@ function setMapOnAll(map) {
 	for (var i = 0; i < mapMarkers.length; i++) {
 		mapMarkers[i].setMap(map);
 	}
-	console.log("this is for map" + map)
 }
 
 function clearMarkers() {
@@ -150,16 +147,12 @@ function createMarker(place) {
 		for (var z = 0; z < resultsTexSearch.length; z++) {
 			if (resultsTexSearch[z].name == name) {
 				var found = resultsTexSearch[z].name;
-				console.log(z, resultsTexSearch[z].name);
-				console.log("name" + found);
 				for (var a = 0; a < resultsPlace.length; a++) {
 					if (resultsPlace[a].name === found) {
 						try {
 							// responsible for calculating the time how much left until it closes. or when it will be opened again.
 							date = new Date();
 							openDay = date.getDay();
-							console.log("date for next closing " + Math.abs(new Date(resultsPlace[a].opening_hours.periods[date.getDay()].close.nextDate) - (new Date())) / 1000 / 60);
-							console.log("date for next openinging" + (new Date(resultsPlace[a].opening_hours.periods[0].open.nextDate)));
 							closes = Math.floor(Math.abs(new Date(resultsPlace[a].opening_hours.periods[date.getDay()].close.nextDate) - (new Date())) / 1000 / 60);
 							closesH = Math.floor(closes / 60)
 							closesM = Math.floor((((closes / 60) - closesH) * 60));
